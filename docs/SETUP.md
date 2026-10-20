@@ -13,7 +13,7 @@ pip install -r requirements.txt
 python python/generate_synthetic_data.py
 ```
 
-This creates five large CSVs under `data/raw/` and an offline SQLite database at `data/saudi_ecommerce.sqlite`. They are intentionally excluded from version control. Generation may require significant time and disk space. The existing `data/sample/` files are for inspection, not the complete dataset.
+This creates five large CSVs under `data/raw/` and an offline SQLite database at `data/saudi_ecommerce.sqlite`. They are intentionally excluded from version control. Generation may require significant time and disk space. **Before rerunning the generator**, remove or move an existing `data/saudi_ecommerce.sqlite` file; the script creates its tables from scratch and does not overwrite an existing database. Generated CSVs in `data/raw/` are overwritten. The existing `data/sample/` files are for inspection, not the complete dataset.
 
 ## 2. Load MySQL
 Run `mysql/01_schema.sql` in MySQL Workbench, then either:
