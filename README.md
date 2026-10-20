@@ -27,13 +27,16 @@ The project uses **1,964,000 fully synthetic records** across five related table
 | Folder | Contents |
 |---|---|
 | `mysql/` | MySQL 8 schema, import guidance, quality checks, SQL analysis and reporting views |
-| `python/` | Synthetic data generator, MySQL loader and validation scripts |
-| `powerbi/` | Editable six-page PBIP project and Power BI setup notes |
-| `analysis/` | Validated KPI summaries |
-| `data/sample/` | Small synthetic samples and data dictionary |
-| `dashboard/` | Standalone browser-based summary dashboard |
-| `excel/` | Assumption-driven business-impact workbook |
-| `reports/` | Executive analysis and recommendations |
+| `python/` | Synthetic data generator, MySQL loader and validation scripts — **pending upload** |
+| `Saudi_Ecommerce.pbip`, `Saudi_Ecommerce.Report/`, `Saudi_Ecommerce.SemanticModel/` | Editable six-page Power BI project (PBIP/TMDL) |
+| `analysis/` | Validated KPI summaries — **pending upload** |
+| `data/sample/` | Small synthetic samples and data dictionary — **pending upload** |
+| `dashboard/` | Standalone browser-based summary dashboard — **pending upload** |
+| `excel/` | Assumption-driven business-impact workbook — **pending upload** |
+| `reports/` | Executive analysis and recommendations — **pending upload** |
+
+| `screenshots/` | Six renamed screenshots of the Power BI report pages |
+| `docs/` | Setup instructions, folder map and validation checklist |
 
 The full synthetic dataset contains **160,000 customers, 4,000 products, 400,000 orders, 1,000,000 order items and 400,000 deliveries**. Large raw CSVs and database files are deliberately excluded from GitHub to keep the repository manageable.
 
