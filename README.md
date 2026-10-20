@@ -24,23 +24,26 @@ The project uses **1,964,000 fully synthetic records** across five related table
 
 ## Project deliverables
 
-| Folder | Contents |
+| Location | Contents |
 |---|---|
-| `mysql/` | MySQL 8 schema, CSV loader, quality checks, SQL analysis and reporting views |
-| `python/` | Synthetic data generator, MySQL loader and validation scripts |
-| `Saudi_Ecommerce.pbip`, `Saudi_Ecommerce.Report/`, `Saudi_Ecommerce.SemanticModel/` | Editable six-page Power BI project (PBIP/TMDL) |
-| `analysis/` | Validated KPI summaries — **pending upload** |
-| `data/sample/` | Small synthetic samples and data dictionary — **pending upload** |
-| `dashboard/` | Standalone browser-based summary dashboard — **pending upload** |
-| `excel/` | Assumption-driven business-impact workbook — **pending upload** |
-| `reports/` | Executive analysis and recommendations — **pending upload** |
-
-| `screenshots/` | Six renamed screenshots of the Power BI report pages |
-| `docs/` | Setup instructions, folder map and validation checklist |
+| `mysql/` | Five numbered SQL scripts: schema, data loading, checks, business analysis and reporting views |
+| `python/` | Synthetic data generator, MySQL loader, dataset validator and aggregate rebuilder |
+| `Saudi_Ecommerce.pbip` | Power BI project entry point |
+| `Saudi_Ecommerce.Report/` | Editable six-page report definition and resources |
+| `Saudi_Ecommerce.SemanticModel/` | Power BI semantic model, relationships and measures |
+| `analysis/` | Saved KPI aggregates and quality-check results |
+| `data/` | Data dictionary, five sample CSV files and instructions for generating full data locally |
+| `excel/` | Assumption-driven business-impact scenario workbook |
+| `reports/` | Executive analysis and recommendations PDF |
+| `screenshots/` | Six dashboard screenshots in presentation order |
+| `docs/` | Setup instructions, project structure and publication validation checklist |
 
 The full synthetic dataset contains **160,000 customers, 4,000 products, 400,000 orders, 1,000,000 order items and 400,000 deliveries**. Large raw CSVs and database files are generated locally and deliberately excluded from GitHub to keep the repository manageable.
 
 ## Quick start
+
+The full synthetic dataset is reproducible but is **not** included in GitHub. Run the generator only when you are ready to create a local dataset. Delete or move a previous generated `data/saudi_ecommerce.sqlite` database before rerunning; otherwise table creation will fail. Do not commit local databases, credentials or full raw CSVs.
+
 
 1. Install Python dependencies: `pip install -r requirements.txt`.
 2. Run `python python/generate_synthetic_data.py` to generate local CSV files under `data/raw/` and an offline SQLite copy under `data/` (these are not committed).
