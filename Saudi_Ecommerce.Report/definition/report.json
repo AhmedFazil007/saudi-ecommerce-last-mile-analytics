@@ -1,0 +1,95 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU02",
+      "reportVersionAtImport": {
+        "visual": "2.12.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Saudi_E-Commerce___Midnight_Te3198975566419523.json",
+      "reportVersionAtImport": {
+        "visual": "2.12.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY26SU02",
+          "path": "BaseThemes/CY26SU02.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "2ZMy0AAmO00qJMuMAiHMjs36wQRyOW6554393323571922.jpg",
+          "path": "2ZMy0AAmO00qJMuMAiHMjs36wQRyOW6554393323571922.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "C3nYuQzLRcTFM9rbDuwLl4lLYhZuWy12202731753037455.jpg",
+          "path": "C3nYuQzLRcTFM9rbDuwLl4lLYhZuWy12202731753037455.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "C3nYuQzLRcTFM9rbDuwLl4lLYhZuWy1960953610460774.jpg",
+          "path": "C3nYuQzLRcTFM9rbDuwLl4lLYhZuWy1960953610460774.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "C3nYuQzLRcTFM9rbDuwLl4lLYhZuWy8182151667034404.jpg",
+          "path": "C3nYuQzLRcTFM9rbDuwLl4lLYhZuWy8182151667034404.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "C3nYuQzLRcTFM9rbDuwLl4lLYhZuWy83551990111719.jpg",
+          "path": "C3nYuQzLRcTFM9rbDuwLl4lLYhZuWy83551990111719.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "C3nYuQzLRcTFM9rbDuwLl4lLYhZuWy9338686513925039.jpg",
+          "path": "C3nYuQzLRcTFM9rbDuwLl4lLYhZuWy9338686513925039.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "Saudi_E-Commerce___Midnight_Te3198975566419523.json",
+          "path": "Saudi_E-Commerce___Midnight_Te3198975566419523.json",
+          "type": "CustomTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useEnhancedTooltips": false
+  }
+}

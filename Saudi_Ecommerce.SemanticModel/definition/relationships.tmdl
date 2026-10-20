@@ -1,0 +1,31 @@
+relationship Orders_customer_id_Customers_customer_id
+	fromColumn: Orders.customer_id
+	toColumn: Customers.customer_id
+
+relationship OrderItems_order_id_Orders_order_id
+	fromColumn: OrderItems.order_id
+	toColumn: Orders.order_id
+
+relationship OrderItems_product_id_Products_product_id
+	fromColumn: OrderItems.product_id
+	toColumn: Products.product_id
+
+relationship Deliveries_order_id_Orders_order_id
+	fromColumn: Deliveries.order_id
+	toColumn: Orders.order_id
+
+relationship ea099c90-6c5d-42bd-ac6e-bb549d48e64b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Customers.signup_date
+	toColumn: LocalDateTable_eddeb03a-5739-40e8-afe4-bcf17a7c227d.Date
+
+relationship b0e58d5e-4d8a-460c-b4b5-6a3d505238aa
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Orders.order_date
+	toColumn: LocalDateTable_7804e9ca-d318-4317-b922-8af5fb05fd8e.Date
+
+relationship b699e6f9-3f14-48f5-b081-19e7784579c9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Orders.'Month Start'
+	toColumn: LocalDateTable_aa764855-2d94-475d-bb71-cdfa8882efad.Date
+

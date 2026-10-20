@@ -1,0 +1,24 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Customers","Products","Orders","OrderItems","Deliveries","MySQL_Server","MySQL_Database"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Customers
+ref table Products
+ref table Orders
+ref table OrderItems
+ref table Deliveries
+ref table DateTableTemplate_3c9c7d97-da87-408e-8233-e1cfc1a812b5
+ref table LocalDateTable_eddeb03a-5739-40e8-afe4-bcf17a7c227d
+ref table LocalDateTable_7804e9ca-d318-4317-b922-8af5fb05fd8e
+ref table LocalDateTable_aa764855-2d94-475d-bb71-cdfa8882efad
+

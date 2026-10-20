@@ -1,0 +1,50 @@
+table Customers
+	lineageTag: 4e86f8d6-acd4-41e8-a6a9-e47010d7a7da
+
+	column customer_id
+		dataType: int64
+		lineageTag: 409af0d9-f747-4efd-bd9c-8902ff937418
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column city
+		dataType: string
+		lineageTag: 017412b2-e523-4c83-8f7c-9c85f2f4a1dc
+		summarizeBy: none
+		sourceColumn: city
+
+	column region
+		dataType: string
+		lineageTag: 8013a06e-0c88-4475-bbc9-4ed8a9e722f8
+		summarizeBy: none
+		sourceColumn: region
+
+	column signup_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c1ca2b78-d75d-479b-b32b-fa73a7f29da2
+		summarizeBy: none
+		sourceColumn: signup_date
+
+		variation Variation
+			isDefault
+			relationship: ea099c90-6c5d-42bd-ac6e-bb549d48e64b
+			defaultHierarchy: LocalDateTable_eddeb03a-5739-40e8-afe4-bcf17a7c227d.'Date Hierarchy'
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column customer_segment
+		dataType: string
+		lineageTag: 0981ee4b-8d9e-4583-949c-bd114aecab98
+		summarizeBy: none
+		sourceColumn: customer_segment
+
+	partition Customers = m
+		mode: import
+		source =
+				let
+				    Source = MySQL.Database(MySQL_Server, MySQL_Database, [ReturnSingleDatabase=true]),
+				    Data = Source{[Schema=MySQL_Database, Item="customers"]}[Data]
+				in
+				    Data
+

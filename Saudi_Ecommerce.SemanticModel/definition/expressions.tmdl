@@ -1,0 +1,6 @@
+expression MySQL_Server = "localhost"
+	lineageTag: c2671a13-0c89-43a0-8ba4-68cc763ceada
+
+expression MySQL_Database = "saudi_ecommerce"
+	lineageTag: a79d215f-3dad-4b84-b84f-5d8842e9a68d
+

@@ -1,0 +1,236 @@
+table Orders
+	lineageTag: ab711223-29ab-4d10-9e9b-aad7c94ef2ad
+
+	measure Orders = DISTINCTCOUNT(Orders[order_id])
+		formatString: #,0
+		lineageTag: 5e3d87f7-4f06-429f-929c-495be6a12caf
+
+	measure 'Delivered Orders' = CALCULATE([Orders], Orders[order_status] = "Delivered")
+		formatString: #,0
+		lineageTag: ab77714d-8b43-4eb5-a599-ed76afa53062
+
+	measure 'Net Sales SAR' = CALCULATE(SUM(Orders[order_total_sar]), Orders[order_status] = "Delivered")
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: 231e849a-0050-46f2-9ab0-cae38b25330a
+
+	measure 'Sales SAR (K)' = [Net Sales SAR]
+		formatString: "SAR "#,0.0,"K";-"SAR "#,0.0,"K";"SAR "0
+		lineageTag: c246c0cf-e0e3-4815-b005-ab7e68c3f39e
+
+	measure 'Average Order Value SAR' = DIVIDE([Net Sales SAR],[Delivered Orders])
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: c74c5d61-e0b6-4df1-b0c9-7920736a182d
+
+	measure 'Shipping Fees SAR' = CALCULATE(SUM(Orders[shipping_fee_sar]),Orders[order_status]="Delivered")
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: 02dc8e0f-6477-4bfe-944b-8a69eef5b764
+
+	measure 'Discounts SAR' = CALCULATE(SUM(Orders[discount_sar]),Orders[order_status]="Delivered")
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: 920ba38c-8f0f-450a-b08a-57c37f2de451
+
+	measure 'Delivered Units' = CALCULATE(SUM(OrderItems[quantity]),Orders[order_status]="Delivered")
+		formatString: #,0
+		lineageTag: 14a5c972-fc90-4446-b3ee-e425a5f1025c
+
+	measure 'Product Revenue SAR' = CALCULATE(SUM(OrderItems[line_revenue_sar]),Orders[order_status]="Delivered")
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: c642917d-ae1d-4997-aacf-55736620d05c
+
+	measure 'Product Cost SAR' = CALCULATE(SUMX(OrderItems,OrderItems[quantity]*OrderItems[unit_cost_sar]),Orders[order_status]="Delivered")
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: 8e3ac0c6-89f1-40f2-b198-93f1e7cfc72d
+
+	measure 'Estimated Gross Profit SAR' = [Product Revenue SAR]-[Product Cost SAR]
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: a2b1576b-796e-418f-9c72-e41a3b56ed33
+
+	measure 'Estimated Gross Margin %' = DIVIDE([Estimated Gross Profit SAR],[Product Revenue SAR])
+		formatString: 0.0%
+		lineageTag: 8e3eb337-1686-4047-a4b3-b026c60938e6
+
+	measure 'Cancelled Orders' = CALCULATE([Orders],Orders[order_status]="Cancelled")
+		formatString: #,0
+		lineageTag: cb7a5303-f4dd-4a60-b3d9-69f42ef9cfe1
+
+	measure 'Cancellation Rate %' = DIVIDE([Cancelled Orders],[Orders])
+		formatString: 0.0%
+		lineageTag: e81ab9ef-9741-4bda-a381-fc537ddc86e3
+
+	measure 'Returned Orders' = CALCULATE([Orders],Orders[order_status]="Returned")
+		formatString: #,0
+		lineageTag: 5bfc1d60-1bad-476d-8224-5fc68e3c79ea
+
+	measure 'Return Rate %' = DIVIDE([Returned Orders],[Orders])
+		formatString: 0.0%
+		lineageTag: b1cd23aa-9a0c-4222-877e-7cabe294ad86
+
+	measure 'On-time Deliveries' =
+			CALCULATE(
+			    COUNTROWS(Deliveries),
+			    FILTER(
+			        Deliveries,
+			        Deliveries[delivery_status] = "Delivered"
+			            && NOT ISBLANK(Deliveries[actual_days])
+			            && NOT ISBLANK(Deliveries[promised_days])
+			            && Deliveries[actual_days] <= Deliveries[promised_days]
+			    )
+			)
+		formatString: #,0
+		lineageTag: 9aa1ef47-5afc-4390-9a5f-571429f944a4
+
+	measure 'Completed Deliveries' = CALCULATE(COUNTROWS(Deliveries),Deliveries[delivery_status]="Delivered")
+		formatString: #,0
+		lineageTag: 24cab40c-43ad-4bfe-82ec-5482d6f8fa08
+
+	measure 'On-time Delivery %' = DIVIDE([On-time Deliveries],[Completed Deliveries])
+		formatString: 0.0%
+		lineageTag: c470c432-091b-4dfb-b12b-d1cbadc20b01
+
+	measure 'Late Delivery %' = DIVIDE([Completed Deliveries] - [On-time Deliveries], [Completed Deliveries])
+		formatString: 0.0%
+		lineageTag: c9911077-4769-481b-beaf-534f75e1bedc
+
+	measure 'Delivery Cost SAR' = CALCULATE(SUM(Deliveries[delivery_cost_sar]),Deliveries[delivery_status]="Delivered")
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: c7add846-a881-4e4c-8ecd-e827e31acda0
+
+	measure 'Delivery Cost per Shipment SAR' = DIVIDE([Delivery Cost SAR],[Completed Deliveries])
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: 71453e5c-f1ae-4b5e-8d32-6701905362ed
+
+	measure 'Average Delivery Days' = CALCULATE(AVERAGE(Deliveries[actual_days]),Deliveries[delivery_status]="Delivered")
+		formatString: 0.0
+		lineageTag: 550524bf-3794-45fd-8e35-22c647bdd54e
+
+	measure 'Average Customer Rating' = CALCULATE(AVERAGE(Deliveries[customer_rating]),Deliveries[delivery_status]="Delivered")
+		formatString: 0.0
+		lineageTag: 373bcbdc-0ef5-4249-9762-9fb2e48fa3da
+
+	measure 'Unique Customers' = DISTINCTCOUNT(Orders[customer_id])
+		formatString: #,0
+		lineageTag: 24f47cc4-34a2-47ab-ac78-6483b3d40efd
+
+	measure 'Orders per Customer' = DIVIDE([Orders],[Unique Customers])
+		formatString: 0.00
+		lineageTag: 46afbe3c-1669-4b37-a3e2-c370aa731022
+
+	measure 'Sales per Customer SAR' = DIVIDE([Net Sales SAR],[Unique Customers])
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: a8a7394e-ba7a-4288-85ba-83783fe6fbff
+
+	measure 'Repeat Customers' = COUNTROWS(FILTER(VALUES(Orders[customer_id]), CALCULATE(DISTINCTCOUNT(Orders[order_id])) > 1))
+		formatString: #,0
+		lineageTag: 58a916a4-2358-4ec4-9db6-870bd929506a
+
+	measure 'Repeat Customer Rate %' = DIVIDE([Repeat Customers],[Unique Customers])
+		formatString: 0.0%
+		lineageTag: 1f7c232f-8b64-4e4d-b9bf-82035b104c86
+
+	measure 'Sales Prior Year SAR' =
+			VAR CurrentYear = SELECTEDVALUE(Orders[Order Year])
+			RETURN IF(NOT ISBLANK(CurrentYear), CALCULATE([Net Sales SAR], REMOVEFILTERS(Orders[Order Year]), Orders[Order Year] = CurrentYear - 1))
+		formatString: "SAR "#,0.00;-"SAR "#,0.00;"SAR "0.00
+		lineageTag: b900cf06-0fc7-4c38-af4c-833d58ca25b0
+
+	measure 'Sales YoY %' =
+			VAR PreviousSales = [Sales Prior Year SAR]
+			RETURN IF(NOT ISBLANK(PreviousSales) && PreviousSales <> 0, DIVIDE([Net Sales SAR] - PreviousSales, PreviousSales))
+		formatString: +0.0%;-0.0%;0.0%
+		lineageTag: c1b214b2-59a6-429c-ada2-27eccae97f37
+
+	column order_id
+		dataType: int64
+		lineageTag: d5632043-e04d-45e6-bb95-3a3b32098e47
+		summarizeBy: none
+		sourceColumn: order_id
+
+	column customer_id
+		dataType: int64
+		lineageTag: af507453-10ef-4ad9-9987-2c2c4d25e058
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column order_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1cd7e4a6-512c-46de-be84-6fe13b8c5dd6
+		summarizeBy: none
+		sourceColumn: order_date
+
+		variation Variation
+			isDefault
+			relationship: b0e58d5e-4d8a-460c-b4b5-6a3d505238aa
+			defaultHierarchy: LocalDateTable_7804e9ca-d318-4317-b922-8af5fb05fd8e.'Date Hierarchy'
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column order_status
+		dataType: string
+		lineageTag: 4087a1af-4549-43c1-84e6-31779b21ac26
+		summarizeBy: none
+		sourceColumn: order_status
+
+	column payment_method
+		dataType: string
+		lineageTag: f0e7b299-34e2-4b32-8c22-058d81f70743
+		summarizeBy: none
+		sourceColumn: payment_method
+
+	column channel
+		dataType: string
+		lineageTag: 743fba5e-fd24-442a-9096-1c719ab84601
+		summarizeBy: none
+		sourceColumn: channel
+
+	column discount_sar
+		dataType: double
+		lineageTag: 07ca2d26-48a3-4577-a04b-c5e02a5c70c6
+		summarizeBy: sum
+		sourceColumn: discount_sar
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipping_fee_sar
+		dataType: double
+		lineageTag: 17307b46-091f-4435-9819-c7b42d9e7c89
+		summarizeBy: sum
+		sourceColumn: shipping_fee_sar
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_total_sar
+		dataType: double
+		lineageTag: ec1fec8e-8613-4ebe-abc1-c1d8b174e30c
+		summarizeBy: sum
+		sourceColumn: order_total_sar
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Year' = YEAR(Orders[order_date])
+		dataType: int64
+		lineageTag: 12d6da68-11e6-417d-9be9-7c61c4b7dc3b
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Start' = DATE(YEAR(Orders[order_date]),MONTH(Orders[order_date]),1)
+		dataType: dateTime
+		formatString: MMM yyyy
+		lineageTag: 7eabfc94-9bc7-49be-a917-226d84918c59
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: b699e6f9-3f14-48f5-b081-19e7784579c9
+			defaultHierarchy: LocalDateTable_aa764855-2d94-475d-bb71-cdfa8882efad.'Date Hierarchy'
+
+	partition Orders = m
+		mode: import
+		source =
+				let
+				    Source = MySQL.Database(MySQL_Server, MySQL_Database, [ReturnSingleDatabase=true]),
+				    Data = Source{[Schema=MySQL_Database, Item="orders"]}[Data]
+				in
+				    Data
+

@@ -1,0 +1,42 @@
+table Products
+	lineageTag: 8623dcc6-e876-44c5-a7ed-3d3adb4b617b
+
+	column product_id
+		dataType: int64
+		lineageTag: 79b9a5b3-39ca-4403-8acb-da0e7e1a7fc4
+		summarizeBy: none
+		sourceColumn: product_id
+
+	column category
+		dataType: string
+		lineageTag: 87496d27-3f30-499c-b43c-ea8397d5f01b
+		summarizeBy: none
+		sourceColumn: category
+
+	column subcategory
+		dataType: string
+		lineageTag: 85ea8ffa-ae36-4681-9349-6c327c92afb6
+		summarizeBy: none
+		sourceColumn: subcategory
+
+	column unit_price_sar
+		dataType: double
+		lineageTag: 45cc858c-8869-488f-ab9e-026dff026078
+		summarizeBy: none
+		sourceColumn: unit_price_sar
+
+	column unit_cost_sar
+		dataType: double
+		lineageTag: 2bd92642-3737-4057-8dbd-9a09dc7189b9
+		summarizeBy: none
+		sourceColumn: unit_cost_sar
+
+	partition Products = m
+		mode: import
+		source =
+				let
+				    Source = MySQL.Database(MySQL_Server, MySQL_Database, [ReturnSingleDatabase=true]),
+				    Data = Source{[Schema=MySQL_Database, Item="products"]}[Data]
+				in
+				    Data
+

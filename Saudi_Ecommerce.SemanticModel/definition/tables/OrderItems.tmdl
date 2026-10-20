@@ -1,0 +1,54 @@
+table OrderItems
+	lineageTag: 5fd01981-1600-4bb8-ab59-19574edfc587
+
+	column order_item_id
+		dataType: int64
+		lineageTag: ad75961f-4136-4425-b917-1d08b5bfe9b9
+		summarizeBy: none
+		sourceColumn: order_item_id
+
+	column order_id
+		dataType: int64
+		lineageTag: 1a10e289-0ca9-4198-8e7a-bfd6c1bc8755
+		summarizeBy: none
+		sourceColumn: order_id
+
+	column product_id
+		dataType: int64
+		lineageTag: 13b7260d-9c30-4d1a-b0e9-63cafb765ad3
+		summarizeBy: none
+		sourceColumn: product_id
+
+	column quantity
+		dataType: int64
+		lineageTag: 61aeb83f-f4c0-4baf-bb9f-0bebf41dedf3
+		summarizeBy: none
+		sourceColumn: quantity
+
+	column unit_price_sar
+		dataType: double
+		lineageTag: c6aa216a-2028-4cf3-a43f-d82e7a9021b5
+		summarizeBy: none
+		sourceColumn: unit_price_sar
+
+	column unit_cost_sar
+		dataType: double
+		lineageTag: 334f9123-c353-4546-9bd0-ad984d8de16c
+		summarizeBy: none
+		sourceColumn: unit_cost_sar
+
+	column line_revenue_sar
+		dataType: double
+		lineageTag: fc8bf812-c793-4346-a6a2-8d9a7ac19f4b
+		summarizeBy: none
+		sourceColumn: line_revenue_sar
+
+	partition OrderItems = m
+		mode: import
+		source =
+				let
+				    Source = MySQL.Database(MySQL_Server, MySQL_Database, [ReturnSingleDatabase=true]),
+				    Data = Source{[Schema=MySQL_Database, Item="order_items"]}[Data]
+				in
+				    Data
+

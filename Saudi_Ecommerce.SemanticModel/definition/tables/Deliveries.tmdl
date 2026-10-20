@@ -1,0 +1,66 @@
+table Deliveries
+	lineageTag: 375d2bbb-ce98-4abf-8e5c-d2f4984daa87
+
+	column delivery_id
+		dataType: int64
+		lineageTag: 536d54da-074e-4392-91dc-cb5d29d3703c
+		summarizeBy: none
+		sourceColumn: delivery_id
+
+	column order_id
+		dataType: int64
+		lineageTag: fcfd1ed4-4b1e-4964-aa2d-da315a8ca537
+		summarizeBy: none
+		sourceColumn: order_id
+
+	column delivery_partner
+		dataType: string
+		lineageTag: 6dfcf0d5-5cfb-4761-bfa3-90b5f00e3e42
+		summarizeBy: none
+		sourceColumn: delivery_partner
+
+	column warehouse_city
+		dataType: string
+		lineageTag: 3a41f526-a7f0-4496-a207-c29a5d853913
+		summarizeBy: none
+		sourceColumn: warehouse_city
+
+	column promised_days
+		dataType: int64
+		lineageTag: 4112ee5a-557d-450c-925c-b9454204b801
+		summarizeBy: none
+		sourceColumn: promised_days
+
+	column actual_days
+		dataType: int64
+		lineageTag: 842142f3-9f84-4dc2-a5c0-002b28709133
+		summarizeBy: none
+		sourceColumn: actual_days
+
+	column delivery_status
+		dataType: string
+		lineageTag: 318c6a66-1820-4037-94e2-9793d35d5c3a
+		summarizeBy: none
+		sourceColumn: delivery_status
+
+	column delivery_cost_sar
+		dataType: double
+		lineageTag: afd9dfbc-14d8-4678-8eb1-fbd6e9c9863f
+		summarizeBy: none
+		sourceColumn: delivery_cost_sar
+
+	column customer_rating
+		dataType: int64
+		lineageTag: 072da371-a96f-429f-8f93-fa8b82846023
+		summarizeBy: none
+		sourceColumn: customer_rating
+
+	partition Deliveries = m
+		mode: import
+		source =
+				let
+				    Source = MySQL.Database(MySQL_Server, MySQL_Database, [ReturnSingleDatabase=true]),
+				    Data = Source{[Schema=MySQL_Database, Item="deliveries"]}[Data]
+				in
+				    Data
+
