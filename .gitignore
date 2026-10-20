@@ -1,0 +1,8 @@
+# Keep large synthetic source data and local databases out of Git
+/data/raw/
+*.sqlite
+*.db
+*.zip
+__pycache__/
+.env
+*.pbix
