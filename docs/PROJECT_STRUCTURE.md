@@ -1,20 +1,22 @@
-# Repository layout and upload checklist
+# Repository structure
 
+```text
+Saudi_Ecommerce.pbip                  Power BI project entry point
+Saudi_Ecommerce.Report/               Editable report definition and assets
+Saudi_Ecommerce.SemanticModel/        TMDL semantic model and measures
+mysql/                                01 schema, 02 load, 03 checks, 04 analysis, 05 views
+python/                               Synthetic generator, MySQL loader, validation, aggregates
+data/DATA_DICTIONARY.md               Entity grains, relationships, KPI definitions
+data/sample/                          Five small synthetic sample CSV files
+analysis/                             KPI CSVs, aggregate JSON and quality checks
+excel/Business_Impact_Scenarios.xlsx  Hypothetical business-impact model
+reports/Executive_Analysis_and_Recommendations.pdf
+screenshots/                           Six dashboard screenshots in presentation order
+docs/                                  Setup, project structure and validation checklist
+requirements.txt
+README.md
 ```
-Saudi_Ecommerce.pbip
-Saudi_Ecommerce.Report/             # Power BI report definition (keep exact name)
-Saudi_Ecommerce.SemanticModel/      # Power BI semantic model (keep exact name)
-screenshots/                         # Six descriptively named dashboard screenshots
-mysql/                               # SQL schema, quality checks, analysis and views
-python/                              # Data generation, loading and validation scripts (pending)
-analysis/                            # Validated KPI summaries (pending)
-data/sample/                         # Small synthetic sample CSVs and data dictionary (pending)
-dashboard/                           # Optional standalone browser dashboard (pending)
-excel/                               # Optional assumption-based scenario workbook (pending)
-reports/                             # Executive analysis and recommendations (pending)
-docs/                                # Setup, project structure and validation checklist
-```
 
-The editable PBIP report uses a relative path to `Saudi_Ecommerce.SemanticModel`. **Do not rename or separate the `.Report` and `.SemanticModel` folders without updating Power BI references.**
+Generated large CSV files under `data/raw/` and the offline `data/saudi_ecommerce.sqlite` are not tracked. To reproduce them run `python python/generate_synthetic_data.py`.
 
-Avoid uploading database credentials, real customer records, multi-gigabyte datasets, `.pbix` cache files or Power BI local settings. Large raw synthetic datasets are better distributed through a separate release or data hosting service.
+Do not rename or separate `Saudi_Ecommerce.Report/` and `Saudi_Ecommerce.SemanticModel/`; the Power BI report references the semantic model by relative path. The `dashboard/` standalone HTML deliverable is optional and is not present.

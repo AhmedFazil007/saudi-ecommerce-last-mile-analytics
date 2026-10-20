@@ -1,20 +1,34 @@
-# Reproducing the project
+# Reproducing the Saudi E-Commerce analytics project
 
 ## Requirements
-- MySQL Server 8 and MySQL Workbench
+- Python 3.10+ and dependencies in `requirements.txt`
+- MySQL Server 8 with MySQL Workbench
 - Power BI Desktop with PBIP/TMDL support
-- Python 3.10+ for data generation and analysis (scripts may need to be uploaded separately)
 
-## Workflow
-1. Obtain the five synthetic CSV files (`customers`, `products`, `orders`, `order_items`, `deliveries`). These large files are not currently included in this repository.
-2. Execute `mysql/01_schema.sql` in MySQL Workbench, then import CSVs in dependency order: customers, products, orders, order_items, deliveries. Verify column mapping, dates, and encoding.
-3. Run `mysql/03_quality_checks.sql` and resolve any discrepancies before interpreting results.
-4. Run `mysql/04_business_analysis.sql` and `mysql/05_powerbi_views.sql` for analysis and reporting views.
-5. Open `Saudi_Ecommerce.pbip` in Power BI Desktop. Configure the MySQL data source and credentials for your environment and refresh the semantic model.
-6. Compare KPIs with SQL results, test slicers and cross-filtering, and inspect all six report pages.
+## 1. Generate the synthetic source data
+From the repository root:
 
-## Important limitations
-- Data are entirely synthetic, representing a fictional business in Saudi Arabia during 2022–2025.
-- Product gross profit does not equal net profit: order discounts, delivery costs, operating expenses and overhead require separate treatment.
-- Excel scenarios, if added, are hypothetical rather than achieved financial benefits.
-- Report rendering and MySQL refresh require validation in the user's local Power BI Desktop installation.
+```bash
+pip install -r requirements.txt
+python python/generate_synthetic_data.py
+```
+
+This creates five large CSVs under `data/raw/` and an offline SQLite database at `data/saudi_ecommerce.sqlite`. They are intentionally excluded from version control. Generation may require significant time and disk space. The existing `data/sample/` files are for inspection, not the complete dataset.
+
+## 2. Load MySQL
+Run `mysql/01_schema.sql` in MySQL Workbench, then either:
+
+```bash
+python python/load_mysql.py --host localhost --user root
+```
+
+or edit the file paths in `mysql/02_load_data.sql` and execute it in Workbench with LOCAL INFILE enabled. The loader imports tables in foreign-key-safe order. Passwords are prompted, not stored in source files.
+
+## 3. Validate and analyze
+Run `mysql/03_quality_checks.sql`, `mysql/04_business_analysis.sql`, and `mysql/05_powerbi_views.sql`. Use `python python/validate_dataset.py` for offline validation of the generated SQLite copy; use `python python/rebuild_aggregates.py` to regenerate selected KPI CSVs. Other committed analysis files represent the original synthetic case study.
+
+## 4. Open Power BI
+Open `Saudi_Ecommerce.pbip` from the repository root. Keep `Saudi_Ecommerce.Report/` and `Saudi_Ecommerce.SemanticModel/` together, configure the local MySQL source, refresh and compare visuals against SQL KPIs.
+
+## Interpretation
+All data are synthetic and the 2022–2025 growth patterns are modeled. Estimated product gross profit is not net profit. The Excel scenarios are hypothetical, not realized savings. Final Power BI Desktop rendering and refresh must be verified locally.

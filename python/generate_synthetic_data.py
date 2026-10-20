@@ -1,7 +1,10 @@
 import csv,random,sqlite3,datetime,os,json
 from collections import Counter
 from pathlib import Path
-P=Path(__file__).resolve().parent
+ROOT=Path(__file__).resolve().parents[1]
+P=ROOT/'data'/'raw'
+P.mkdir(parents=True,exist_ok=True)
+DB=ROOT/'data'/'saudi_ecommerce.sqlite'
 R=random.Random(20261020)
 N_CUSTOMERS=160000; N_PRODUCTS=4000; N_ORDERS=400000
 cities=['Riyadh','Jeddah','Dammam','Khobar','Makkah','Madinah','Tabuk','Abha','Taif','Jubail','Al Ahsa','Buraydah']
@@ -11,7 +14,7 @@ cat=['Electronics','Fashion','Beauty','Home & Kitchen','Groceries','Sports','Aut
 catw=[17,22,12,15,17,8,5,4]
 price_ranges=[(80,4200),(25,700),(18,500),(35,2300),(7,250),(25,1300),(25,1500),(10,350)]
 orders_by_year={2022:60000,2023:85000,2024:110000,2025:145000}
-conn=sqlite3.connect(P/'saudi_ecommerce.sqlite');c=conn.cursor()
+conn=sqlite3.connect(DB);c=conn.cursor()
 c.executescript('''PRAGMA journal_mode=OFF; PRAGMA synchronous=OFF;
 CREATE TABLE customers(customer_id INTEGER PRIMARY KEY,city TEXT NOT NULL,region TEXT NOT NULL,signup_date TEXT NOT NULL,customer_segment TEXT NOT NULL);
 CREATE TABLE products(product_id INTEGER PRIMARY KEY,category TEXT NOT NULL,subcategory TEXT NOT NULL,unit_price_sar REAL NOT NULL,unit_cost_sar REAL NOT NULL);

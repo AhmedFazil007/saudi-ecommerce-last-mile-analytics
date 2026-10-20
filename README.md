@@ -26,8 +26,8 @@ The project uses **1,964,000 fully synthetic records** across five related table
 
 | Folder | Contents |
 |---|---|
-| `mysql/` | MySQL 8 schema, import guidance, quality checks, SQL analysis and reporting views |
-| `python/` | Synthetic data generator, MySQL loader and validation scripts — **pending upload** |
+| `mysql/` | MySQL 8 schema, CSV loader, quality checks, SQL analysis and reporting views |
+| `python/` | Synthetic data generator, MySQL loader and validation scripts |
 | `Saudi_Ecommerce.pbip`, `Saudi_Ecommerce.Report/`, `Saudi_Ecommerce.SemanticModel/` | Editable six-page Power BI project (PBIP/TMDL) |
 | `analysis/` | Validated KPI summaries — **pending upload** |
 | `data/sample/` | Small synthetic samples and data dictionary — **pending upload** |
@@ -38,7 +38,17 @@ The project uses **1,964,000 fully synthetic records** across five related table
 | `screenshots/` | Six renamed screenshots of the Power BI report pages |
 | `docs/` | Setup instructions, folder map and validation checklist |
 
-The full synthetic dataset contains **160,000 customers, 4,000 products, 400,000 orders, 1,000,000 order items and 400,000 deliveries**. Large raw CSVs and database files are deliberately excluded from GitHub to keep the repository manageable.
+The full synthetic dataset contains **160,000 customers, 4,000 products, 400,000 orders, 1,000,000 order items and 400,000 deliveries**. Large raw CSVs and database files are generated locally and deliberately excluded from GitHub to keep the repository manageable.
+
+## Quick start
+
+1. Install Python dependencies: `pip install -r requirements.txt`.
+2. Run `python python/generate_synthetic_data.py` to generate local CSV files under `data/raw/` and an offline SQLite copy under `data/` (these are not committed).
+3. Execute `mysql/01_schema.sql` in MySQL Workbench, then use `python python/load_mysql.py --host localhost --user root` or adapt `mysql/02_load_data.sql`.
+4. Run `mysql/03_quality_checks.sql` and review the results.
+5. Open `Saudi_Ecommerce.pbip` in Power BI Desktop, configure the MySQL connection, and refresh.
+
+See [setup instructions](docs/SETUP.md), [dashboard screenshots](screenshots/), and [executive report](reports/Executive_Analysis_and_Recommendations.pdf).
 
 ## MySQL and Power BI
 

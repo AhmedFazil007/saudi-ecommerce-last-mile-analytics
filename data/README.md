@@ -1,5 +1,9 @@
-# Synthetic source data
+# Synthetic data
 
-The project models five linked entities: customers, products, orders, order items and deliveries. The full modeled dataset contains approximately 1,964,000 records (160,000 customers; 4,000 products; 400,000 orders; 1,000,000 order items; 400,000 deliveries) covering 2022–2025.
+This fictional Saudi e-commerce case study models five linked tables: 160,000 customers, 4,000 products, 400,000 orders, 1,000,000 order items and 400,000 deliveries (1,964,000 rows total).
 
-Full-size CSV files are intentionally not committed here. Add small, clearly labeled synthetic samples under `data/sample/`, plus a data dictionary, to make the schema understandable without requiring a large download. Never include real customer data or database passwords.
+- `DATA_DICTIONARY.md` describes fields, relationships, grains and KPI definitions.
+- `sample/` contains five small sample CSV files.
+- Run `python python/generate_synthetic_data.py` to produce complete CSVs in `raw/` and `saudi_ecommerce.sqlite` here locally. These large generated files should remain outside GitHub.
+
+The records, business operations and modeled figures are entirely synthetic; no real customer information is used.
