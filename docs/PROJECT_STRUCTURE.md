@@ -19,4 +19,4 @@ README.md
 
 Generated large CSV files under `data/raw/` and the offline `data/saudi_ecommerce.sqlite` are not tracked. To reproduce them run `python python/generate_synthetic_data.py`.
 
-Do not rename or separate `Saudi_Ecommerce.Report/` and `Saudi_Ecommerce.SemanticModel/`; the Power BI report references the semantic model by relative path. The `dashboard/` standalone HTML deliverable is optional and is not present.
+Do not rename or separate `Saudi_Ecommerce.Report/` and `Saudi_Ecommerce.SemanticModel/`; the Power BI report references the semantic model by relative path. No separate HTML dashboard is part of this project.
