@@ -1,91 +1,76 @@
 # Saudi E-Commerce & Last-Mile Delivery Analytics
 
-**Business question:** *Are more orders creating more value—or just more operational work?*
+**An independent analytics project using Python, MySQL, Power BI and Excel**
 
-**MySQL · Python · Power BI · Excel · Business analysis**
+I wanted to build something beyond a dashboard that simply shows sales figures. I chose a fictional Saudi e-commerce business and looked at how sales, customer activity and deliveries fit together. My main question was simple: **if orders are increasing, is the business actually doing better?**
 
-> **Portfolio case study — 100% synthetic data.** This is a fictional Saudi e-commerce business covering 2022–2025. Figures, cities, carriers, and outcomes are simulated; they do not describe actual Saudi market performance or real delivery partners.
+I worked with a synthetic dataset covering 2022–2025: **400,000 orders, 160,000 customers, 4,000 products, 1 million order items and 400,000 delivery records**. The data is simulated, not taken from a real company, so the results are useful for demonstrating analysis rather than describing the actual Saudi market.
 
-## Executive decision brief
+## What I found
 
-**The central finding: order volume is expanding much faster than delivered sales.** In 2025, modeled orders grew **31.8%**, while delivered sales grew **2.1%**. Delivered average order value (AOV) declined **20.1%** year over year. Management should investigate basket composition and customer economics before prioritizing additional order acquisition.
+The biggest thing I noticed was the difference between order growth and sales growth.
 
-| 2025 indicator | Result | Business interpretation |
-|---|---:|---|
-| Orders | **145,000** | **+31.8% YoY**; more transactions to serve |
-| Delivered sales | **SAR 255.63M** | **+2.1% YoY**; modest sales expansion |
-| Delivered AOV | **SAR 1,976** | **−20.1% YoY**; smaller realized baskets |
-| Late delivery rate | **~29.9%** | About 3 in 10 completed deliveries missed the modeled promise |
-| Cancellation rate | **4.90%** | Operational leakage worth segmenting by reason, channel and geography |
+| Metric | 2024 | 2025 | Change |
+|---|---:|---:|---:|
+| Orders | 110,000 | 145,000 | **+31.8%** |
+| Delivered sales | SAR 250.41M | SAR 255.63M | **+2.1%** |
+| Average delivered order value | SAR 2,474 | SAR 1,976 | **−20.1%** |
 
-**Recommended management priorities:** (1) diagnose falling basket value, (2) improve delivery reliability through targeted operational tests, and (3) focus retention and merchandising efforts on contribution—not only transaction count.
+The business was handling considerably more orders, but the value of each delivered order was falling. I wouldn't assume this was caused by discounting or customers buying cheaper products without checking the underlying data. In fact, the synthetic data generator changes the number of items per order over time, which contributes to this pattern.
 
-[Read the full decision-oriented business analysis →](reports/BUSINESS_INSIGHTS_AND_ACTION_PLAN.md)
+**My takeaway:** Looking only at the number of orders can make growth look stronger than it really is. I'd want to understand average basket size, discounts and product mix before recommending more spending to acquire customers.
 
-## Dashboard: six management views
+## Other things that stood out
 
-| Page | Decision it supports | Preview |
-|---|---|---|
-| Executive Overview | Is growth creating business value? | [View](screenshots/01_executive_overview.png) |
-| Sales & Profitability | Which categories and trends merit attention? | [View](screenshots/02_sales_profitability.png) |
-| Customer Intelligence | Which customers and channels deserve investigation? | [View](screenshots/03_customer_intelligence.png) |
-| Delivery & Logistics | Where should service reliability improve? | [View](screenshots/04_delivery_logistics.png) |
-| Order Quality | Where are cancellations and returns occurring? | [View](screenshots/05_order_quality.png) |
-| Business Opportunities | Which improvement hypotheses should be tested? | [View](screenshots/06_business_opportunities.png) |
+**Delivery delays:** About **29.9%** of completed deliveries were late in the simulated data. The five delivery partners had very similar late rates (roughly 29.7%–30.3%), so I wouldn't single out one company. I would start by checking promised delivery times, warehouse locations and routes.
+
+**Where sales come from:** Riyadh, Jeddah and Dammam made up about **59.1%** of delivered sales across the four years. The mobile app accounted for about **61.8%**. I would look at these areas and channels first when investigating customer experience and profitability, while keeping in mind that the geographic split is simulated.
+
+**Product categories:** Electronics and Home & Kitchen contributed about **70.1%** of gross item sales on delivered orders. That makes them important categories to examine, but high sales do not necessarily mean high profit once discounts and fulfillment costs are considered.
+
+## What I would suggest to the business
+
+1. **Find out why order value is dropping.** Compare basket size, discounts and product categories across years and customer groups. If the numbers support it, test bundles or relevant cross-selling rather than offering broad discounts.
+2. **Work on delivery reliability.** Look for patterns in late deliveries by city, warehouse and promised delivery window. I'd test clearer delivery promises and earlier alerts for delayed shipments before changing carriers.
+3. **Focus on profitable growth.** Compare channels and categories using contribution after discounts and delivery costs, not just total sales.
+4. **Measure whether changes actually help.** Start with small tests and compare results before rolling anything out widely.
+
+These are my recommendations based on the case study, not changes I implemented or financial improvements I achieved.
+
+For a closer look at how I reached these conclusions, see my [business insights and recommendations](reports/BUSINESS_INSIGHTS_AND_ACTION_PLAN.md).
+
+## Power BI dashboards
+
+I organized the report into six pages, each looking at a different part of the business.
+
+| Dashboard | What I explored |
+|---|---|
+| [Executive Overview](screenshots/01_executive_overview.png) | Overall sales, orders and delivery performance |
+| [Sales & Profitability](screenshots/02_sales_profitability.png) | Sales trends, product categories and estimated margins |
+| [Customer Intelligence](screenshots/03_customer_intelligence.png) | Customer activity and repeat purchases |
+| [Delivery & Logistics](screenshots/04_delivery_logistics.png) | Delivery time, costs and partner performance |
+| [Order Quality](screenshots/05_order_quality.png) | Cancellations and returns |
+| [Business Opportunities](screenshots/06_business_opportunities.png) | Areas worth investigating and testing |
 
 ![Executive Overview dashboard](screenshots/01_executive_overview.png)
 
-## Insights that change decisions
+## What's included in this repository
 
-### 1. Growth without comparable basket value
-2024 → 2025 orders: **110,000 → 145,000**. Delivered sales: **SAR 250.41M → SAR 255.63M**. Delivered AOV: **SAR 2,474 → SAR 1,976**.
-
-**Action:** Segment AOV by year, channel, product category, discount band and customer cohort. Pilot margin-aware bundles or cross-sell offers **only after** determining what drove the change. The synthetic generator intentionally changes items per order, so the trend should **not** be attributed to customer behavior without qualification.
-
-### 2. Delivery reliability is a cross-partner issue
-The modeled late-delivery rate is approximately **29.9%**. Carrier late rates are clustered between **29.72% and 30.30%**.
-
-**Action:** Compare shipments with similar warehouse, city, promise length and order characteristics. Test better promise-setting and exception alerts before selecting a “worst” carrier. Differences here are synthetic and do not demonstrate actual carrier quality.
-
-### 3. Commercial activity is concentrated
-Riyadh, Jeddah and Dammam account for approximately **59.1%** of modeled delivered sales. The mobile app contributes approximately **61.8%** of delivered sales.
-
-**Action:** Prioritize analysis of service levels, repeat purchase behavior and basket economics in these major segments; avoid interpreting simulated geographic allocation as real market demand.
-
-### 4. Category contribution needs careful definition
-Electronics and Home & Kitchen account for approximately **70.1% of delivered gross item sales** across categories. This is **before** order-level discounts, shipping charges, delivery costs and overhead.
-
-**Action:** Compare **contribution after discount and fulfillment costs**, not gross item sales alone, before reallocating marketing or inventory budgets.
-
-## Recommended 30–60–90 day plan
-
-| When | Management experiment | KPI to monitor |
-|---|---|---|
-| Days 1–30 | Diagnose basket decline by mix, order size and discounts; establish like-for-like baselines | Delivered AOV, sales/order, pre-discount item margin |
-| Days 31–60 | Pilot targeted bundles and delivery exception alerts on limited cohorts | Incremental contribution/order, late delivery %, complaints |
-| Days 61–90 | Evaluate pilot versus matched control; scale only statistically and commercially credible improvements | Contribution after fulfillment, repeat purchase, service-level attainment |
-
-**Decision rule:** Treat each intervention as a hypothesis. No savings, uplift or causal impact has been demonstrated by this synthetic case study.
-
-## Project contents
-
-| Location | Purpose |
+| Files | Purpose |
 |---|---|
-| [Business insights and action plan](reports/BUSINESS_INSIGHTS_AND_ACTION_PLAN.md) | Findings, evidence, recommendations, tests and caveats |
-| [Executive PDF](reports/Executive_Analysis_and_Recommendations.pdf) | Downloadable executive narrative |
-| [Power BI project](Saudi_Ecommerce.pbip) | Entry point for editable six-page PBIP/TMDL report |
-| `Saudi_Ecommerce.Report/` and `Saudi_Ecommerce.SemanticModel/` | Report assets, semantic model, relationships and DAX |
-| [Dashboard screenshots](screenshots/) | Visual previews of all six report pages |
-| [SQL](mysql/) | Schema, loading, quality checks, analysis and reporting views |
-| [Python](python/) | Data generation, MySQL loading, offline checks and aggregates |
-| [Analysis outputs](analysis/) | CSV and JSON aggregates used for documented findings |
-| [Data dictionary and samples](data/) | Entity definitions and five synthetic sample datasets |
-| [Scenario workbook](excel/Business_Impact_Scenarios.xlsx) | Assumption-driven business-impact scenarios, **not achieved results** |
-| [Setup and validation](docs/SETUP.md) | Reproduction instructions and validation checklist |
+| [Power BI project](Saudi_Ecommerce.pbip) and `Saudi_Ecommerce.Report/`, `Saudi_Ecommerce.SemanticModel/` | Editable report and data model |
+| [SQL scripts](mysql/) | Database schema, loading, quality checks and business queries |
+| [Python scripts](python/) | Generate synthetic data, load MySQL, validate data and rebuild summaries |
+| [Analysis outputs](analysis/) | Saved KPI calculations and data checks |
+| [Data dictionary and samples](data/) | Table definitions and sample CSVs |
+| [Excel scenario model](excel/Business_Impact_Scenarios.xlsx) | Exploring possible improvements under assumptions |
+| [Executive report](reports/Executive_Analysis_and_Recommendations.pdf) | PDF summary |
+| [Business insights](reports/BUSINESS_INSIGHTS_AND_ACTION_PLAN.md) | My interpretation and suggested next steps |
+| [Setup guide](docs/SETUP.md) | How to reproduce the project |
 
-## Reproduce the analysis
+## How to run it
 
-The full dataset contains **1,964,000 simulated records**: 160,000 customers, 4,000 products, 400,000 orders, 1,000,000 order items and 400,000 deliveries. Large raw CSVs and local databases are excluded from GitHub.
+The full synthetic dataset is generated locally rather than stored in GitHub.
 
 ```bash
 pip install -r requirements.txt
@@ -93,18 +78,12 @@ python python/generate_synthetic_data.py
 python python/validate_dataset.py
 ```
 
-Create the MySQL database using `mysql/01_schema.sql`, then run `python python/load_mysql.py --host localhost --user root`. Open `Saudi_Ecommerce.pbip` in Power BI Desktop, configure the MySQL source and refresh. See [full setup instructions](docs/SETUP.md).
+For MySQL, run `mysql/01_schema.sql` and then `python python/load_mysql.py --host localhost --user root`. Open `Saudi_Ecommerce.pbip` in Power BI Desktop and configure the MySQL connection. Full instructions are in [docs/SETUP.md](docs/SETUP.md).
 
-**Re-run caution:** Move or delete the previously generated `data/saudi_ecommerce.sqlite` file before regenerating; the generator creates tables from scratch.
+If rerunning the generator, first move or delete the previous `data/saudi_ecommerce.sqlite` file; it creates tables from scratch.
 
-## Methodology and limitations
+## A note about the data
 
-- **Delivered sales** sum order totals for orders marked `Delivered`; this is a case-study convention, not formal revenue recognition.
-- **Delivered AOV** = delivered sales / delivered orders. It differs from sales / all orders.
-- **Late delivery %** = delivered shipments with actual days exceeding promised days / completed deliveries.
-- **Category gross item sales** are not net sales; estimated product margin is not net profit.
-- The 2022–2025 trajectory and operational distributions are **designed into the generator**. These are analytical practice signals, not evidence about real Saudi consumers, merchants or logistics providers.
-- Committed KPI extracts are snapshots. Recompute and reconcile against regenerated data before treating them as independently verified.
-- The Power BI report still requires local opening, refresh and end-to-end validation. See [validation checklist](docs/VALIDATION_CHECKLIST.md).
+This is an **independent portfolio project built on fictional data**. The trends were created through a synthetic data generator, so I am not presenting them as findings about real Saudi businesses or delivery companies. Delivered sales refer to orders marked `Delivered`; estimated product margin is not net profit. The Excel workbook explores hypothetical scenarios, not actual savings.
 
-*Independent business analytics portfolio project. All customer and operational data are fictional.*
+The report files are included, but opening and refreshing the full Power BI project on another computer still needs to be checked locally.
