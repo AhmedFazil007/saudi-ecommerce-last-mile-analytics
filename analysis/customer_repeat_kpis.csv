@@ -1,0 +1,5 @@
+frequency_band,customers,orders
+1 order,32804,32804
+2 orders,40854,81708
+3-5 orders,66298,241516
+6+ orders,6799,43972

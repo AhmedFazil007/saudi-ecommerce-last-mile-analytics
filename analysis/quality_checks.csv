@@ -1,0 +1,7 @@
+check_name,issues
+orphan_orders_customers,0
+orphan_order_items_orders,0
+orphan_order_items_products,0
+orphan_deliveries_orders,0
+duplicate_delivery_orders,0
+order_total_reconciliation_gt_1_halalah,0

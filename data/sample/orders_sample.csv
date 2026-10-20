@@ -1,0 +1,201 @@
+order_id,customer_id,order_date,order_status,payment_method,channel,discount_sar,shipping_fee_sar,order_total_sar
+1,106757,2022-07-31,Delivered,Mada,Website,0.0,0.0,2487.3
+2,94933,2022-08-11,Delivered,Mada,Website,466.19,0.0,8857.68
+3,25920,2022-05-30,Delivered,Mada,Mobile App,1558.03,0.0,8828.84
+4,54791,2022-01-31,Delivered,Credit Card,Mobile App,94.35,0.0,849.15
+5,8157,2022-09-19,Cancelled,Mada,Mobile App,0.0,0.0,1694.2
+6,47448,2022-08-29,Delivered,Mada,Marketplace,366.77,0.0,6968.71
+7,61465,2022-12-25,Delivered,Credit Card,Website,120.26,0.0,2284.92
+8,39715,2022-08-11,Delivered,Mada,Mobile App,593.62,0.0,3363.84
+9,7822,2022-03-26,Delivered,Mada,Mobile App,81.12,0.0,1541.35
+10,72075,2022-10-22,Delivered,Cash on Delivery,Mobile App,0.0,0.0,1956.48
+11,116122,2022-06-04,Delivered,Mada,Mobile App,683.93,0.0,2735.72
+12,90076,2022-04-30,Delivered,Mada,Mobile App,0.0,0.0,3599.21
+13,147096,2022-03-10,Delivered,Credit Card,Mobile App,52.43,0.0,996.11
+14,53700,2022-12-27,Delivered,STC Pay,Website,572.98,0.0,10886.71
+15,90943,2022-05-03,Delivered,Mada,Marketplace,0.0,0.0,3342.88
+16,38190,2022-10-03,Delivered,STC Pay,Mobile App,218.19,0.0,1963.73
+17,6340,2022-09-10,Delivered,Apple Pay,Marketplace,285.99,0.0,5433.82
+18,112094,2022-07-11,Delivered,STC Pay,Mobile App,99.19,0.0,1884.58
+19,17364,2022-01-30,Delivered,Mada,Website,0.0,0.0,1493.89
+20,70102,2022-01-18,Delivered,Credit Card,Mobile App,1011.7,0.0,9105.3
+21,71633,2022-08-13,Cancelled,Credit Card,Mobile App,0.0,0.0,885.0
+22,128970,2022-06-23,Delivered,Mada,Mobile App,0.0,0.0,275.21
+23,129037,2022-12-23,Delivered,Mada,Mobile App,694.45,0.0,6250.01
+24,94457,2022-01-12,Delivered,STC Pay,Mobile App,0.0,0.0,3028.21
+25,71957,2022-01-11,Cancelled,Apple Pay,Mobile App,459.55,0.0,4135.94
+26,146445,2022-11-04,Delivered,Cash on Delivery,Marketplace,209.62,0.0,1886.61
+27,59952,2022-11-18,Delivered,Credit Card,Mobile App,0.0,0.0,5484.12
+28,155304,2022-10-03,Delivered,Apple Pay,Website,454.89,0.0,2577.73
+29,117256,2022-05-20,Cancelled,Mada,Mobile App,145.02,0.0,1305.16
+30,2804,2022-08-15,Delivered,Mada,Website,634.92,0.0,3597.9
+31,114575,2022-06-20,Cancelled,Mada,Mobile App,29.72,0.0,564.64
+32,42679,2022-06-09,Cancelled,Mada,Marketplace,0.0,0.0,2042.52
+33,116720,2022-02-18,Delivered,Apple Pay,Mobile App,73.89,0.0,1403.99
+34,12390,2022-03-31,Delivered,Apple Pay,Marketplace,0.0,0.0,3559.04
+35,72324,2022-03-07,Delivered,Cash on Delivery,Marketplace,79.94,0.0,1518.8
+36,90399,2022-04-09,Delivered,Credit Card,Mobile App,0.0,0.0,1800.61
+37,45252,2022-07-19,Delivered,Credit Card,Mobile App,221.25,0.0,1991.24
+38,58723,2022-08-19,Delivered,Apple Pay,Mobile App,0.0,0.0,803.98
+39,107989,2022-03-07,Delivered,Mada,Mobile App,0.0,0.0,579.65
+40,119649,2022-04-12,Delivered,Cash on Delivery,Marketplace,0.0,0.0,784.16
+41,54185,2022-12-25,Delivered,Mada,Website,0.0,0.0,3630.95
+42,65561,2022-01-06,Delivered,Mada,Marketplace,0.0,20.0,215.48
+43,94898,2022-06-01,Delivered,Mada,Website,0.0,0.0,8178.96
+44,156936,2022-10-30,Delivered,STC Pay,Website,0.0,0.0,1709.46
+45,121662,2022-01-18,Cancelled,Cash on Delivery,Mobile App,0.0,0.0,4158.07
+46,66899,2022-06-12,Delivered,Mada,Website,264.88,0.0,5032.69
+47,44598,2022-12-05,Delivered,STC Pay,Mobile App,87.25,0.0,1657.71
+48,6445,2022-11-06,Delivered,Mada,Marketplace,0.0,0.0,738.72
+49,90461,2022-02-17,Delivered,STC Pay,Mobile App,595.88,0.0,2383.51
+50,79228,2022-10-26,Delivered,Mada,Mobile App,0.0,0.0,2237.91
+51,38629,2022-08-30,Delivered,Mada,Website,347.74,0.0,3129.63
+52,44310,2022-07-17,Delivered,Mada,Marketplace,852.15,0.0,4828.83
+53,8260,2022-12-18,Delivered,Credit Card,Mobile App,123.81,0.0,1114.25
+54,136435,2022-03-18,Delivered,Apple Pay,Website,162.8,0.0,3093.12
+55,152199,2022-11-26,Delivered,Cash on Delivery,Website,91.43,0.0,1737.19
+56,57073,2022-07-05,Delivered,Mada,Mobile App,23.04,0.0,437.73
+57,12408,2022-03-04,Delivered,STC Pay,Mobile App,62.22,0.0,1182.16
+58,116017,2022-08-10,Delivered,Apple Pay,Mobile App,0.0,0.0,4546.6
+59,69226,2022-04-22,Delivered,Cash on Delivery,Mobile App,377.32,0.0,1509.28
+60,10238,2022-07-25,Delivered,Credit Card,Mobile App,226.35,0.0,1282.62
+61,147407,2022-11-05,Delivered,Cash on Delivery,Website,130.91,0.0,741.8
+62,130355,2022-12-27,Delivered,Apple Pay,Marketplace,0.0,0.0,1650.11
+63,3034,2022-06-22,Delivered,Credit Card,Mobile App,0.0,0.0,2315.47
+64,135809,2022-04-09,Cancelled,Cash on Delivery,Mobile App,0.0,0.0,9241.63
+65,71318,2022-04-23,Delivered,Cash on Delivery,Marketplace,587.2,0.0,2348.81
+66,25973,2022-03-29,Returned,Mada,Mobile App,652.24,0.0,5870.16
+67,108684,2022-06-21,Delivered,Credit Card,Mobile App,201.05,0.0,1139.27
+68,71312,2022-10-08,Delivered,Credit Card,Mobile App,0.0,0.0,1169.06
+69,5657,2022-10-16,Delivered,Credit Card,Mobile App,48.68,0.0,924.83
+70,50004,2022-08-20,Delivered,Mada,Mobile App,0.0,0.0,4209.97
+71,147117,2022-04-29,Delivered,Mada,Mobile App,117.42,0.0,2231.04
+72,155768,2022-09-11,Delivered,Mada,Mobile App,530.82,0.0,4777.37
+73,52100,2022-03-09,Delivered,Mada,Website,0.0,0.0,4732.21
+74,11127,2022-02-15,Delivered,Apple Pay,Mobile App,248.75,0.0,2238.73
+75,77233,2022-08-18,Cancelled,Apple Pay,Mobile App,0.0,0.0,2564.4
+76,100398,2022-03-29,Delivered,Apple Pay,Mobile App,0.0,0.0,8549.34
+77,45452,2022-07-27,Cancelled,Credit Card,Mobile App,361.61,0.0,3254.45
+78,114051,2022-09-19,Delivered,Mada,Website,213.77,0.0,4061.71
+79,64689,2022-08-07,Delivered,Mada,Mobile App,0.0,0.0,2629.61
+80,72135,2022-07-04,Delivered,Mada,Website,101.75,0.0,1933.2
+81,72390,2022-08-28,Delivered,Credit Card,Mobile App,0.0,0.0,2376.46
+82,145551,2022-05-16,Delivered,Mada,Mobile App,0.0,0.0,3012.62
+83,144170,2022-08-28,Delivered,Credit Card,Mobile App,58.54,0.0,526.87
+84,158249,2022-04-01,Delivered,Apple Pay,Website,0.0,0.0,2060.12
+85,58014,2022-04-15,Delivered,Apple Pay,Website,0.0,0.0,4230.24
+86,121639,2022-04-12,Delivered,Mada,Marketplace,106.74,0.0,2028.0
+87,96315,2022-09-16,Delivered,Apple Pay,Mobile App,0.0,0.0,2050.56
+88,49874,2022-01-06,Delivered,Credit Card,Website,0.0,0.0,590.81
+89,94726,2022-05-23,Delivered,Cash on Delivery,Mobile App,134.49,0.0,2555.22
+90,134564,2022-07-29,Delivered,Mada,Mobile App,0.0,0.0,3137.35
+91,4069,2022-07-22,Delivered,Apple Pay,Mobile App,418.95,0.0,2374.05
+92,1770,2022-11-01,Delivered,Mada,Website,298.23,0.0,1192.94
+93,93699,2022-09-28,Delivered,Credit Card,Mobile App,68.62,0.0,1303.85
+94,72157,2022-08-15,Delivered,Mada,Marketplace,120.5,0.0,2289.5
+95,113568,2022-02-05,Delivered,STC Pay,Marketplace,240.33,0.0,2162.99
+96,91678,2022-01-01,Delivered,Mada,Mobile App,183.74,0.0,1653.65
+97,83666,2022-12-10,Delivered,Mada,Mobile App,89.23,0.0,803.04
+98,155790,2022-06-14,Delivered,Mada,Mobile App,1163.88,0.0,6595.34
+99,19173,2022-01-30,Delivered,Credit Card,Marketplace,59.0,0.0,334.33
+100,56133,2022-04-15,Delivered,Cash on Delivery,Mobile App,416.81,0.0,7919.41
+101,49394,2022-10-04,Delivered,Mada,Website,91.49,0.0,1738.35
+102,107218,2022-09-09,Cancelled,Mada,Mobile App,0.0,0.0,9116.9
+103,3326,2022-07-27,Delivered,Cash on Delivery,Mobile App,0.0,0.0,4703.74
+104,64820,2022-05-16,Delivered,Mada,Website,254.49,0.0,4835.3
+105,86728,2022-12-03,Delivered,Apple Pay,Mobile App,0.0,0.0,4226.62
+106,46134,2022-04-26,Delivered,Apple Pay,Website,271.26,0.0,1537.16
+107,93609,2022-03-24,Delivered,Mada,Mobile App,0.0,0.0,709.27
+108,151614,2022-01-22,Delivered,Apple Pay,Mobile App,466.92,0.0,8871.52
+109,72725,2022-10-26,Delivered,Apple Pay,Website,0.0,0.0,740.3
+110,71539,2022-10-12,Delivered,Mada,Mobile App,0.0,0.0,2854.61
+111,104503,2022-02-24,Delivered,Cash on Delivery,Mobile App,136.08,0.0,2585.54
+112,7534,2022-03-31,Delivered,Cash on Delivery,Website,0.0,0.0,1589.12
+113,77656,2022-10-31,Returned,Apple Pay,Mobile App,992.8,0.0,3971.22
+114,155936,2022-12-09,Delivered,Mada,Website,0.0,0.0,671.52
+115,125506,2022-08-11,Delivered,Apple Pay,Mobile App,0.0,0.0,2649.13
+116,77906,2022-07-08,Delivered,STC Pay,Mobile App,410.28,0.0,2324.95
+117,142467,2022-03-04,Delivered,Credit Card,Website,110.26,0.0,2094.87
+118,154681,2022-06-27,Delivered,Mada,Mobile App,228.51,0.0,2056.56
+119,59634,2022-04-01,Cancelled,Cash on Delivery,Website,1457.88,0.0,5831.52
+120,54567,2022-10-02,Delivered,Apple Pay,Mobile App,100.44,0.0,903.91
+121,138161,2022-04-03,Delivered,Credit Card,Website,1369.01,0.0,7757.75
+122,91295,2022-06-12,Delivered,Mada,Mobile App,0.0,0.0,4789.74
+123,98527,2022-12-29,Delivered,Mada,Website,210.53,0.0,1193.02
+124,80796,2022-11-26,Delivered,Credit Card,Mobile App,30.31,0.0,575.79
+125,112471,2022-08-30,Delivered,Cash on Delivery,Mobile App,0.0,0.0,2287.26
+126,130035,2022-04-17,Delivered,Credit Card,Website,387.31,0.0,7358.84
+127,9004,2022-12-13,Delivered,Cash on Delivery,Mobile App,64.93,0.0,1233.72
+128,87034,2022-04-03,Delivered,Apple Pay,Mobile App,898.32,0.0,8084.87
+129,86989,2022-06-30,Delivered,Credit Card,Mobile App,0.0,0.0,988.85
+130,20967,2022-04-05,Delivered,Apple Pay,Website,400.42,0.0,3603.79
+131,12509,2022-07-22,Delivered,Credit Card,Marketplace,583.39,0.0,3305.86
+132,30500,2022-01-04,Delivered,Credit Card,Mobile App,858.55,0.0,4865.09
+133,11227,2022-02-19,Delivered,Mada,Mobile App,0.0,0.0,1497.93
+134,25500,2022-08-02,Delivered,Cash on Delivery,Mobile App,264.67,0.0,2382.07
+135,8666,2022-12-09,Delivered,Credit Card,Mobile App,0.0,0.0,5915.49
+136,28543,2022-01-24,Delivered,Credit Card,Mobile App,24.79,0.0,471.09
+137,14282,2022-07-03,Delivered,Mada,Website,36.31,0.0,689.87
+138,113168,2022-04-20,Returned,Apple Pay,Mobile App,126.12,0.0,1135.07
+139,125990,2022-11-23,Delivered,Mada,Website,0.0,0.0,5825.55
+140,81012,2022-03-21,Delivered,Cash on Delivery,Website,0.0,0.0,1033.96
+141,113003,2022-01-19,Delivered,Apple Pay,Mobile App,0.0,0.0,777.27
+142,122132,2022-07-09,Delivered,STC Pay,Website,218.95,0.0,1970.52
+143,109634,2022-03-07,Delivered,Credit Card,Mobile App,1619.04,0.0,6476.15
+144,69083,2022-08-14,Delivered,Mada,Mobile App,0.0,0.0,3073.8
+145,79182,2022-10-14,Delivered,Mada,Mobile App,0.0,0.0,6879.02
+146,101482,2022-12-20,Delivered,Apple Pay,Mobile App,0.0,0.0,1662.96
+147,6211,2022-02-13,Returned,Credit Card,Website,0.0,0.0,3500.37
+148,2033,2022-09-06,Delivered,Apple Pay,Mobile App,68.8,0.0,619.15
+149,134913,2022-09-21,Delivered,Apple Pay,Mobile App,0.0,0.0,5466.92
+150,77072,2022-02-12,Delivered,Credit Card,Website,0.0,0.0,9135.06
+151,110736,2022-08-18,Delivered,Credit Card,Mobile App,0.0,0.0,2194.43
+152,49069,2022-06-30,Delivered,Mada,Website,853.52,0.0,3414.1
+153,136017,2022-02-19,Delivered,Credit Card,Mobile App,465.14,0.0,4186.24
+154,90669,2022-01-16,Delivered,Credit Card,Mobile App,0.0,0.0,1045.8
+155,13783,2022-05-28,Cancelled,Mada,Mobile App,0.0,0.0,2774.2
+156,141024,2022-04-12,Delivered,Credit Card,Mobile App,809.5,0.0,7285.45
+157,134090,2022-04-17,Delivered,Apple Pay,Marketplace,0.0,0.0,320.92
+158,116874,2022-03-29,Delivered,Apple Pay,Mobile App,0.0,0.0,951.92
+159,108539,2022-09-05,Delivered,Apple Pay,Mobile App,0.0,0.0,2089.3
+160,132043,2022-04-24,Cancelled,STC Pay,Website,0.0,0.0,4623.04
+161,56171,2022-06-05,Delivered,Mada,Mobile App,108.72,0.0,978.52
+162,82710,2022-12-25,Delivered,Mada,Mobile App,490.14,0.0,4411.27
+163,3372,2022-06-07,Delivered,Mada,Website,0.0,0.0,1165.28
+164,65237,2022-06-07,Cancelled,Mada,Website,0.0,0.0,4319.59
+165,17654,2022-10-18,Delivered,Mada,Mobile App,0.0,0.0,1493.63
+166,75172,2022-07-22,Delivered,Mada,Mobile App,696.53,0.0,6268.81
+167,60644,2022-06-18,Returned,Apple Pay,Marketplace,98.41,0.0,885.72
+168,96690,2022-05-17,Delivered,Apple Pay,Mobile App,328.41,0.0,6239.81
+169,144663,2022-05-29,Delivered,Mada,Mobile App,139.11,0.0,788.26
+170,45525,2022-09-28,Delivered,Credit Card,Mobile App,75.81,0.0,1440.39
+171,23050,2022-10-10,Delivered,Mada,Website,0.0,0.0,3559.6
+172,137450,2022-12-01,Delivered,Mada,Website,798.57,0.0,4525.25
+173,139995,2022-08-22,Delivered,Apple Pay,Website,0.0,0.0,7929.76
+174,85549,2022-12-15,Delivered,Apple Pay,Mobile App,0.0,0.0,2667.61
+175,83854,2022-04-21,Delivered,Credit Card,Website,96.79,0.0,387.18
+176,154954,2022-09-15,Delivered,Apple Pay,Mobile App,0.0,0.0,3023.93
+177,26790,2022-01-02,Delivered,Mada,Website,0.0,0.0,7038.73
+178,119363,2022-05-06,Delivered,Credit Card,Mobile App,209.09,0.0,1184.86
+179,73971,2022-08-07,Delivered,Credit Card,Mobile App,61.24,0.0,551.15
+180,52780,2022-06-20,Delivered,Credit Card,Website,69.8,0.0,628.19
+181,148427,2022-09-19,Delivered,STC Pay,Mobile App,159.77,0.0,905.38
+182,54608,2022-12-13,Delivered,Apple Pay,Mobile App,753.9,0.0,14324.02
+183,62092,2022-10-15,Delivered,STC Pay,Mobile App,0.0,0.0,5285.71
+184,26411,2022-08-26,Delivered,Apple Pay,Mobile App,39.33,0.0,353.96
+185,3413,2022-09-26,Delivered,Apple Pay,Mobile App,338.44,0.0,1917.85
+186,88702,2022-01-21,Delivered,Mada,Website,87.53,0.0,1663.05
+187,19159,2022-06-28,Delivered,Credit Card,Website,0.0,0.0,4367.61
+188,82761,2022-08-13,Delivered,Mada,Website,930.49,0.0,3721.97
+189,26171,2022-10-16,Delivered,Apple Pay,Marketplace,630.34,0.0,2521.34
+190,142475,2022-06-30,Delivered,Mada,Mobile App,0.0,0.0,1160.04
+191,35254,2022-09-18,Delivered,Mada,Mobile App,0.0,0.0,2458.71
+192,33930,2022-10-09,Delivered,Apple Pay,Mobile App,0.0,0.0,2306.97
+193,58665,2022-02-05,Delivered,Mada,Mobile App,671.83,0.0,12764.78
+194,149244,2022-09-01,Delivered,Apple Pay,Mobile App,118.46,0.0,2250.69
+195,56642,2022-07-19,Delivered,Mada,Website,77.13,0.0,1465.48
+196,44142,2022-08-22,Delivered,Mada,Mobile App,61.4,0.0,552.63
+197,134045,2022-05-03,Delivered,Cash on Delivery,Mobile App,34.15,0.0,648.91
+198,23316,2022-09-07,Delivered,STC Pay,Mobile App,352.47,0.0,3172.25
+199,78562,2022-07-21,Delivered,Apple Pay,Website,0.0,0.0,9807.28
+200,127665,2022-04-30,Delivered,Credit Card,Mobile App,62.58,0.0,1189.0

@@ -1,0 +1,588 @@
+{
+  "annual": [
+    {
+      "year": "2022",
+      "orders": 60000,
+      "active_customers": 50170,
+      "delivered_sales_sar": 163718973.85,
+      "returned_order_value_sar": 5322130.38,
+      "delivered_aov_sar": 2965.82,
+      "cancellation_pct": 4.96,
+      "return_pct": 3.03
+    },
+    {
+      "year": "2023",
+      "orders": 85000,
+      "active_customers": 65840,
+      "delivered_sales_sar": 229357804.31,
+      "returned_order_value_sar": 7534221.62,
+      "delivered_aov_sar": 2932.7,
+      "cancellation_pct": 4.95,
+      "return_pct": 3.04
+    },
+    {
+      "year": "2024",
+      "orders": 110000,
+      "active_customers": 79540,
+      "delivered_sales_sar": 250406892.77,
+      "returned_order_value_sar": 7991291.87,
+      "delivered_aov_sar": 2474.03,
+      "cancellation_pct": 4.98,
+      "return_pct": 3.01
+    },
+    {
+      "year": "2025",
+      "orders": 145000,
+      "active_customers": 95056,
+      "delivered_sales_sar": 255627934.73,
+      "returned_order_value_sar": 8353040.32,
+      "delivered_aov_sar": 1976.05,
+      "cancellation_pct": 4.9,
+      "return_pct": 2.9
+    }
+  ],
+  "city": [
+    {
+      "city": "Riyadh",
+      "orders": 116459,
+      "delivered_sales_sar": 262057176.97,
+      "cancellation_pct": 4.97,
+      "return_pct": 2.95
+    },
+    {
+      "city": "Jeddah",
+      "orders": 79843,
+      "delivered_sales_sar": 179559752.56,
+      "cancellation_pct": 4.74,
+      "return_pct": 3.08
+    },
+    {
+      "city": "Dammam",
+      "orders": 40188,
+      "delivered_sales_sar": 89854597.47,
+      "cancellation_pct": 5.11,
+      "return_pct": 2.95
+    },
+    {
+      "city": "Makkah",
+      "orders": 32005,
+      "delivered_sales_sar": 71440419.64,
+      "cancellation_pct": 4.91,
+      "return_pct": 3.04
+    },
+    {
+      "city": "Khobar",
+      "orders": 27368,
+      "delivered_sales_sar": 61652257.31,
+      "cancellation_pct": 5.21,
+      "return_pct": 2.81
+    },
+    {
+      "city": "Madinah",
+      "orders": 23993,
+      "delivered_sales_sar": 53897175.04,
+      "cancellation_pct": 5.01,
+      "return_pct": 3.02
+    },
+    {
+      "city": "Tabuk",
+      "orders": 15972,
+      "delivered_sales_sar": 36567690.12,
+      "cancellation_pct": 5.25,
+      "return_pct": 2.78
+    },
+    {
+      "city": "Taif",
+      "orders": 16056,
+      "delivered_sales_sar": 36400141.38,
+      "cancellation_pct": 4.56,
+      "return_pct": 2.77
+    },
+    {
+      "city": "Abha",
+      "orders": 16037,
+      "delivered_sales_sar": 36133475.91,
+      "cancellation_pct": 5.11,
+      "return_pct": 3.09
+    },
+    {
+      "city": "Al Ahsa",
+      "orders": 12416,
+      "delivered_sales_sar": 27833648.71,
+      "cancellation_pct": 4.87,
+      "return_pct": 3.39
+    },
+    {
+      "city": "Jubail",
+      "orders": 11865,
+      "delivered_sales_sar": 26600183.48,
+      "cancellation_pct": 4.91,
+      "return_pct": 2.93
+    },
+    {
+      "city": "Buraydah",
+      "orders": 7798,
+      "delivered_sales_sar": 17115087.07,
+      "cancellation_pct": 4.78,
+      "return_pct": 2.82
+    }
+  ],
+  "monthly": [
+    {
+      "month": "2022-01",
+      "orders": 5112,
+      "delivered_sales_sar": 14017225.15,
+      "cancellation_pct": 4.89
+    },
+    {
+      "month": "2022-02",
+      "orders": 4501,
+      "delivered_sales_sar": 12319605.43,
+      "cancellation_pct": 4.95
+    },
+    {
+      "month": "2022-03",
+      "orders": 5198,
+      "delivered_sales_sar": 14268013.49,
+      "cancellation_pct": 4.83
+    },
+    {
+      "month": "2022-04",
+      "orders": 4934,
+      "delivered_sales_sar": 13299846.64,
+      "cancellation_pct": 5.57
+    },
+    {
+      "month": "2022-05",
+      "orders": 5065,
+      "delivered_sales_sar": 13794002.98,
+      "cancellation_pct": 4.94
+    },
+    {
+      "month": "2022-06",
+      "orders": 4959,
+      "delivered_sales_sar": 13359985.74,
+      "cancellation_pct": 5.0
+    },
+    {
+      "month": "2022-07",
+      "orders": 5010,
+      "delivered_sales_sar": 13658693.7,
+      "cancellation_pct": 5.19
+    },
+    {
+      "month": "2022-08",
+      "orders": 5122,
+      "delivered_sales_sar": 13665533.18,
+      "cancellation_pct": 5.19
+    },
+    {
+      "month": "2022-09",
+      "orders": 4819,
+      "delivered_sales_sar": 13108260.2,
+      "cancellation_pct": 5.0
+    },
+    {
+      "month": "2022-10",
+      "orders": 5123,
+      "delivered_sales_sar": 14218337.96,
+      "cancellation_pct": 4.49
+    },
+    {
+      "month": "2022-11",
+      "orders": 4954,
+      "delivered_sales_sar": 13720598.19,
+      "cancellation_pct": 4.62
+    },
+    {
+      "month": "2022-12",
+      "orders": 5203,
+      "delivered_sales_sar": 14288871.19,
+      "cancellation_pct": 4.9
+    },
+    {
+      "month": "2023-01",
+      "orders": 7299,
+      "delivered_sales_sar": 19687738.46,
+      "cancellation_pct": 5.15
+    },
+    {
+      "month": "2023-02",
+      "orders": 6588,
+      "delivered_sales_sar": 17269902.32,
+      "cancellation_pct": 5.39
+    },
+    {
+      "month": "2023-03",
+      "orders": 7151,
+      "delivered_sales_sar": 19768675.98,
+      "cancellation_pct": 4.95
+    },
+    {
+      "month": "2023-04",
+      "orders": 6868,
+      "delivered_sales_sar": 18920036.7,
+      "cancellation_pct": 5.01
+    },
+    {
+      "month": "2023-05",
+      "orders": 7071,
+      "delivered_sales_sar": 19039465.42,
+      "cancellation_pct": 4.96
+    },
+    {
+      "month": "2023-06",
+      "orders": 6905,
+      "delivered_sales_sar": 18809869.95,
+      "cancellation_pct": 4.82
+    },
+    {
+      "month": "2023-07",
+      "orders": 7281,
+      "delivered_sales_sar": 19394722.85,
+      "cancellation_pct": 4.86
+    },
+    {
+      "month": "2023-08",
+      "orders": 7297,
+      "delivered_sales_sar": 19651817.02,
+      "cancellation_pct": 4.93
+    },
+    {
+      "month": "2023-09",
+      "orders": 7113,
+      "delivered_sales_sar": 19228868.61,
+      "cancellation_pct": 4.86
+    },
+    {
+      "month": "2023-10",
+      "orders": 7024,
+      "delivered_sales_sar": 19334885.94,
+      "cancellation_pct": 4.58
+    },
+    {
+      "month": "2023-11",
+      "orders": 7032,
+      "delivered_sales_sar": 18740511.92,
+      "cancellation_pct": 4.76
+    },
+    {
+      "month": "2023-12",
+      "orders": 7371,
+      "delivered_sales_sar": 19511309.14,
+      "cancellation_pct": 5.17
+    },
+    {
+      "month": "2024-01",
+      "orders": 9308,
+      "delivered_sales_sar": 21097632.85,
+      "cancellation_pct": 4.95
+    },
+    {
+      "month": "2024-02",
+      "orders": 8655,
+      "delivered_sales_sar": 19831534.03,
+      "cancellation_pct": 4.4
+    },
+    {
+      "month": "2024-03",
+      "orders": 9290,
+      "delivered_sales_sar": 21237001.02,
+      "cancellation_pct": 4.82
+    },
+    {
+      "month": "2024-04",
+      "orders": 9078,
+      "delivered_sales_sar": 20862570.55,
+      "cancellation_pct": 5.02
+    },
+    {
+      "month": "2024-05",
+      "orders": 9302,
+      "delivered_sales_sar": 21500817.4,
+      "cancellation_pct": 4.88
+    },
+    {
+      "month": "2024-06",
+      "orders": 9168,
+      "delivered_sales_sar": 20988476.5,
+      "cancellation_pct": 5.15
+    },
+    {
+      "month": "2024-07",
+      "orders": 9209,
+      "delivered_sales_sar": 20868759.7,
+      "cancellation_pct": 5.36
+    },
+    {
+      "month": "2024-08",
+      "orders": 9222,
+      "delivered_sales_sar": 20582128.73,
+      "cancellation_pct": 4.8
+    },
+    {
+      "month": "2024-09",
+      "orders": 9090,
+      "delivered_sales_sar": 20668246.03,
+      "cancellation_pct": 5.17
+    },
+    {
+      "month": "2024-10",
+      "orders": 9230,
+      "delivered_sales_sar": 21222185.56,
+      "cancellation_pct": 5.34
+    },
+    {
+      "month": "2024-11",
+      "orders": 9123,
+      "delivered_sales_sar": 20475593.43,
+      "cancellation_pct": 4.82
+    },
+    {
+      "month": "2024-12",
+      "orders": 9325,
+      "delivered_sales_sar": 21071946.97,
+      "cancellation_pct": 4.95
+    },
+    {
+      "month": "2025-01",
+      "orders": 12318,
+      "delivered_sales_sar": 21909875.88,
+      "cancellation_pct": 4.68
+    },
+    {
+      "month": "2025-02",
+      "orders": 11167,
+      "delivered_sales_sar": 19761116.54,
+      "cancellation_pct": 4.84
+    },
+    {
+      "month": "2025-03",
+      "orders": 12418,
+      "delivered_sales_sar": 22242040.13,
+      "cancellation_pct": 4.9
+    },
+    {
+      "month": "2025-04",
+      "orders": 11974,
+      "delivered_sales_sar": 21181525.19,
+      "cancellation_pct": 5.07
+    },
+    {
+      "month": "2025-05",
+      "orders": 12453,
+      "delivered_sales_sar": 21850176.49,
+      "cancellation_pct": 4.83
+    },
+    {
+      "month": "2025-06",
+      "orders": 11949,
+      "delivered_sales_sar": 20931357.59,
+      "cancellation_pct": 4.95
+    },
+    {
+      "month": "2025-07",
+      "orders": 12059,
+      "delivered_sales_sar": 20936974.87,
+      "cancellation_pct": 4.88
+    },
+    {
+      "month": "2025-08",
+      "orders": 12300,
+      "delivered_sales_sar": 21742780.89,
+      "cancellation_pct": 4.91
+    },
+    {
+      "month": "2025-09",
+      "orders": 11774,
+      "delivered_sales_sar": 20727089.53,
+      "cancellation_pct": 4.59
+    },
+    {
+      "month": "2025-10",
+      "orders": 12414,
+      "delivered_sales_sar": 21652345.58,
+      "cancellation_pct": 5.07
+    },
+    {
+      "month": "2025-11",
+      "orders": 11875,
+      "delivered_sales_sar": 21112208.7,
+      "cancellation_pct": 5.14
+    },
+    {
+      "month": "2025-12",
+      "orders": 12299,
+      "delivered_sales_sar": 21580443.34,
+      "cancellation_pct": 5.0
+    }
+  ],
+  "partner": [
+    {
+      "delivery_partner": "Naqel",
+      "delivery_records": 80195,
+      "delivered_orders": 73113,
+      "late_delivery_pct": 30.3,
+      "avg_delivery_cost_sar": 25.51,
+      "avg_customer_rating": 4.1
+    },
+    {
+      "delivery_partner": "In-house",
+      "delivery_records": 79764,
+      "delivered_orders": 72606,
+      "late_delivery_pct": 29.92,
+      "avg_delivery_cost_sar": 25.48,
+      "avg_customer_rating": 4.1
+    },
+    {
+      "delivery_partner": "SMSA",
+      "delivery_records": 79867,
+      "delivered_orders": 72669,
+      "late_delivery_pct": 29.9,
+      "avg_delivery_cost_sar": 25.58,
+      "avg_customer_rating": 4.1
+    },
+    {
+      "delivery_partner": "Aramex",
+      "delivery_records": 80071,
+      "delivered_orders": 72871,
+      "late_delivery_pct": 29.87,
+      "avg_delivery_cost_sar": 25.49,
+      "avg_customer_rating": 4.1
+    },
+    {
+      "delivery_partner": "SPL",
+      "delivery_records": 80103,
+      "delivered_orders": 72727,
+      "late_delivery_pct": 29.72,
+      "avg_delivery_cost_sar": 25.5,
+      "avg_customer_rating": 4.1
+    }
+  ],
+  "category": [
+    {
+      "category": "Electronics",
+      "delivered_orders": 132813,
+      "delivered_gross_item_sales_sar": 444290852.12,
+      "delivered_item_cost_sar": 299342071.24,
+      "delivered_pre_discount_item_margin_sar": 144948780.88
+    },
+    {
+      "category": "Home & Kitchen",
+      "delivered_orders": 121115,
+      "delivered_gross_item_sales_sar": 222062606.02,
+      "delivered_item_cost_sar": 148935171.78,
+      "delivered_pre_discount_item_margin_sar": 73127434.24
+    },
+    {
+      "category": "Fashion",
+      "delivered_orders": 166281,
+      "delivered_gross_item_sales_sar": 98913743.17,
+      "delivered_item_cost_sar": 66995041.36,
+      "delivered_pre_discount_item_margin_sar": 31918701.81
+    },
+    {
+      "category": "Sports",
+      "delivered_orders": 67572,
+      "delivered_gross_item_sales_sar": 63220754.78,
+      "delivered_item_cost_sar": 42522087.71,
+      "delivered_pre_discount_item_margin_sar": 20698667.07
+    },
+    {
+      "category": "Automotive",
+      "delivered_orders": 40168,
+      "delivered_gross_item_sales_sar": 45311280.85,
+      "delivered_item_cost_sar": 30717836.81,
+      "delivered_pre_discount_item_margin_sar": 14593444.04
+    },
+    {
+      "category": "Beauty",
+      "delivered_orders": 97510,
+      "delivered_gross_item_sales_sar": 38323509.51,
+      "delivered_item_cost_sar": 25909644.23,
+      "delivered_pre_discount_item_margin_sar": 12413865.28
+    },
+    {
+      "category": "Groceries",
+      "delivered_orders": 145041,
+      "delivered_gross_item_sales_sar": 30104644.52,
+      "delivered_item_cost_sar": 20450592.61,
+      "delivered_pre_discount_item_margin_sar": 9654051.91
+    },
+    {
+      "category": "Books & Stationery",
+      "delivered_orders": 32285,
+      "delivered_gross_item_sales_sar": 7901594.06,
+      "delivered_item_cost_sar": 5346382.12,
+      "delivered_pre_discount_item_margin_sar": 2555211.94
+    }
+  ],
+  "channels": [
+    {
+      "channel": "Mobile App",
+      "orders": 247717,
+      "delivered_sales_sar": 555560444.37,
+      "cancellation_pct": 4.96
+    },
+    {
+      "channel": "Website",
+      "orders": 116257,
+      "delivered_sales_sar": 262829156.72,
+      "cancellation_pct": 4.9
+    },
+    {
+      "channel": "Marketplace",
+      "orders": 36026,
+      "delivered_sales_sar": 80722004.57,
+      "cancellation_pct": 4.95
+    }
+  ],
+  "cohorts": [
+    {
+      "frequency_band": "1 order",
+      "customers": 32804,
+      "orders": 32804
+    },
+    {
+      "frequency_band": "2 orders",
+      "customers": 40854,
+      "orders": 81708
+    },
+    {
+      "frequency_band": "3-5 orders",
+      "customers": 66298,
+      "orders": 241516
+    },
+    {
+      "frequency_band": "6+ orders",
+      "customers": 6799,
+      "orders": 43972
+    }
+  ],
+  "quality": [
+    {
+      "check_name": "orphan_orders_customers",
+      "issues": 0
+    },
+    {
+      "check_name": "orphan_order_items_orders",
+      "issues": 0
+    },
+    {
+      "check_name": "orphan_order_items_products",
+      "issues": 0
+    },
+    {
+      "check_name": "orphan_deliveries_orders",
+      "issues": 0
+    },
+    {
+      "check_name": "duplicate_delivery_orders",
+      "issues": 0
+    },
+    {
+      "check_name": "order_total_reconciliation_gt_1_halalah",
+      "issues": 0
+    }
+  ]
+}

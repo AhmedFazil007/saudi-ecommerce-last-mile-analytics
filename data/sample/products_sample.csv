@@ -1,0 +1,201 @@
+product_id,category,subcategory,unit_price_sar,unit_cost_sar
+1,Electronics,Electronics - Segment 2,2747.42,2075.53
+2,Fashion,Fashion - Segment 3,649.47,387.63
+3,Sports,Sports - Segment 4,229.69,127.94
+4,Groceries,Groceries - Segment 5,12.59,8.33
+5,Automotive,Automotive - Segment 6,1330.4,707.46
+6,Home & Kitchen,Home & Kitchen - Segment 7,1719.97,984.08
+7,Books & Stationery,Books & Stationery - Segment 8,42.98,30.91
+8,Fashion,Fashion - Segment 1,291.4,207.2
+9,Home & Kitchen,Home & Kitchen - Segment 2,1467.09,811.21
+10,Sports,Sports - Segment 3,544.32,436.24
+11,Electronics,Electronics - Segment 4,186.85,115.74
+12,Electronics,Electronics - Segment 5,212.53,161.37
+13,Sports,Sports - Segment 6,771.68,615.19
+14,Home & Kitchen,Home & Kitchen - Segment 7,358.86,246.61
+15,Home & Kitchen,Home & Kitchen - Segment 8,463.98,342.19
+16,Home & Kitchen,Home & Kitchen - Segment 1,841.99,517.77
+17,Electronics,Electronics - Segment 2,982.76,757.58
+18,Groceries,Groceries - Segment 3,54.23,39.16
+19,Groceries,Groceries - Segment 4,121.82,97.91
+20,Fashion,Fashion - Segment 5,259.27,142.8
+21,Groceries,Groceries - Segment 6,185.79,149.96
+22,Groceries,Groceries - Segment 7,205.53,142.73
+23,Beauty,Beauty - Segment 8,191.29,130.52
+24,Home & Kitchen,Home & Kitchen - Segment 1,741.36,598.53
+25,Fashion,Fashion - Segment 2,157.43,119.38
+26,Electronics,Electronics - Segment 3,1357.09,1044.84
+27,Fashion,Fashion - Segment 4,193.94,145.57
+28,Home & Kitchen,Home & Kitchen - Segment 5,1277.56,785.63
+29,Electronics,Electronics - Segment 6,1519.45,1080.59
+30,Fashion,Fashion - Segment 7,546.05,371.72
+31,Fashion,Fashion - Segment 8,550.28,377.64
+32,Groceries,Groceries - Segment 1,35.83,20.02
+33,Fashion,Fashion - Segment 2,612.43,363.1
+34,Fashion,Fashion - Segment 3,634.2,346.12
+35,Fashion,Fashion - Segment 4,576.13,457.08
+36,Fashion,Fashion - Segment 5,637.06,415.55
+37,Sports,Sports - Segment 6,299.15,191.53
+38,Home & Kitchen,Home & Kitchen - Segment 7,1884.69,1439.47
+39,Electronics,Electronics - Segment 8,2647.02,1873.89
+40,Home & Kitchen,Home & Kitchen - Segment 1,1701.89,1174.42
+41,Electronics,Electronics - Segment 2,3106.63,2090.46
+42,Home & Kitchen,Home & Kitchen - Segment 3,2102.54,1624.28
+43,Sports,Sports - Segment 4,544.42,332.68
+44,Home & Kitchen,Home & Kitchen - Segment 5,2194.31,1493.11
+45,Fashion,Fashion - Segment 6,443.65,346.62
+46,Fashion,Fashion - Segment 7,491.29,317.27
+47,Fashion,Fashion - Segment 8,137.79,73.35
+48,Home & Kitchen,Home & Kitchen - Segment 1,1279.48,905.86
+49,Fashion,Fashion - Segment 2,196.61,157.92
+50,Groceries,Groceries - Segment 3,187.03,97.62
+51,Electronics,Electronics - Segment 4,2782.71,1616.75
+52,Electronics,Electronics - Segment 5,141.59,95.1
+53,Electronics,Electronics - Segment 6,986.07,571.2
+54,Groceries,Groceries - Segment 7,55.22,44.99
+55,Automotive,Automotive - Segment 8,1066.9,660.15
+56,Automotive,Automotive - Segment 1,223.89,120.93
+57,Electronics,Electronics - Segment 2,181.09,104.52
+58,Home & Kitchen,Home & Kitchen - Segment 3,1007.06,570.77
+59,Home & Kitchen,Home & Kitchen - Segment 4,1926.35,1265.87
+60,Sports,Sports - Segment 5,1056.3,636.02
+61,Home & Kitchen,Home & Kitchen - Segment 6,1908.13,1087.32
+62,Electronics,Electronics - Segment 7,691.96,402.89
+63,Books & Stationery,Books & Stationery - Segment 8,124.66,80.02
+64,Sports,Sports - Segment 1,805.93,541.29
+65,Home & Kitchen,Home & Kitchen - Segment 2,1266.11,713.75
+66,Home & Kitchen,Home & Kitchen - Segment 3,264.21,172.61
+67,Electronics,Electronics - Segment 4,1345.93,897.82
+68,Home & Kitchen,Home & Kitchen - Segment 5,1666.55,906.51
+69,Electronics,Electronics - Segment 6,1450.91,931.19
+70,Electronics,Electronics - Segment 7,459.04,286.35
+71,Fashion,Fashion - Segment 8,400.03,260.58
+72,Fashion,Fashion - Segment 1,629.13,478.96
+73,Groceries,Groceries - Segment 2,205.87,138.01
+74,Home & Kitchen,Home & Kitchen - Segment 3,1024.85,747.1
+75,Fashion,Fashion - Segment 4,74.68,54.76
+76,Electronics,Electronics - Segment 5,1482.88,896.35
+77,Home & Kitchen,Home & Kitchen - Segment 6,891.31,585.09
+78,Fashion,Fashion - Segment 7,155.46,90.7
+79,Groceries,Groceries - Segment 8,126.39,72.35
+80,Beauty,Beauty - Segment 1,363.67,239.85
+81,Fashion,Fashion - Segment 2,553.9,433.75
+82,Sports,Sports - Segment 3,1125.04,757.07
+83,Groceries,Groceries - Segment 4,224.05,179.38
+84,Electronics,Electronics - Segment 5,1268.08,967.86
+85,Electronics,Electronics - Segment 6,3841.31,2020.55
+86,Fashion,Fashion - Segment 7,690.02,504.82
+87,Electronics,Electronics - Segment 8,2550.72,1895.76
+88,Electronics,Electronics - Segment 1,2719.44,1865.34
+89,Groceries,Groceries - Segment 2,205.64,145.42
+90,Groceries,Groceries - Segment 3,28.18,15.89
+91,Sports,Sports - Segment 4,1049.41,658.32
+92,Electronics,Electronics - Segment 5,1233.16,885.88
+93,Fashion,Fashion - Segment 6,32.61,21.96
+94,Sports,Sports - Segment 7,37.9,22.82
+95,Fashion,Fashion - Segment 8,236.44,140.94
+96,Home & Kitchen,Home & Kitchen - Segment 1,1218.66,666.05
+97,Books & Stationery,Books & Stationery - Segment 2,279.87,183.14
+98,Beauty,Beauty - Segment 3,272.27,145.72
+99,Fashion,Fashion - Segment 4,422.45,332.54
+100,Beauty,Beauty - Segment 5,303.45,217.58
+101,Books & Stationery,Books & Stationery - Segment 6,225.08,165.06
+102,Groceries,Groceries - Segment 7,149.93,100.26
+103,Electronics,Electronics - Segment 8,1337.02,912.99
+104,Beauty,Beauty - Segment 1,253.83,151.39
+105,Groceries,Groceries - Segment 2,116.99,72.96
+106,Automotive,Automotive - Segment 3,1430.51,795.13
+107,Books & Stationery,Books & Stationery - Segment 4,172.18,111.01
+108,Groceries,Groceries - Segment 5,142.78,89.44
+109,Fashion,Fashion - Segment 6,90.09,62.15
+110,Home & Kitchen,Home & Kitchen - Segment 7,2219.31,1562.12
+111,Electronics,Electronics - Segment 8,1518.49,997.53
+112,Home & Kitchen,Home & Kitchen - Segment 1,1795.0,1028.02
+113,Beauty,Beauty - Segment 2,84.02,53.34
+114,Home & Kitchen,Home & Kitchen - Segment 3,671.16,480.13
+115,Fashion,Fashion - Segment 4,255.51,158.9
+116,Groceries,Groceries - Segment 5,214.63,116.71
+117,Beauty,Beauty - Segment 6,42.93,25.71
+118,Fashion,Fashion - Segment 7,75.05,47.92
+119,Groceries,Groceries - Segment 8,198.25,130.64
+120,Home & Kitchen,Home & Kitchen - Segment 1,1381.61,969.35
+121,Fashion,Fashion - Segment 2,154.62,94.6
+122,Sports,Sports - Segment 3,909.81,729.77
+123,Sports,Sports - Segment 4,200.55,104.61
+124,Groceries,Groceries - Segment 5,135.04,98.44
+125,Fashion,Fashion - Segment 6,266.72,220.35
+126,Beauty,Beauty - Segment 7,334.57,181.07
+127,Beauty,Beauty - Segment 8,303.67,204.46
+128,Electronics,Electronics - Segment 1,150.58,107.72
+129,Groceries,Groceries - Segment 2,196.87,143.64
+130,Home & Kitchen,Home & Kitchen - Segment 3,896.15,567.64
+131,Home & Kitchen,Home & Kitchen - Segment 4,2102.3,1558.4
+132,Home & Kitchen,Home & Kitchen - Segment 5,312.83,203.41
+133,Books & Stationery,Books & Stationery - Segment 6,132.55,105.17
+134,Home & Kitchen,Home & Kitchen - Segment 7,694.49,537.09
+135,Fashion,Fashion - Segment 8,218.18,171.44
+136,Groceries,Groceries - Segment 1,196.63,121.39
+137,Groceries,Groceries - Segment 2,177.93,98.8
+138,Fashion,Fashion - Segment 3,314.59,251.85
+139,Sports,Sports - Segment 4,107.71,62.33
+140,Electronics,Electronics - Segment 5,3843.63,2915.13
+141,Fashion,Fashion - Segment 6,95.6,57.24
+142,Groceries,Groceries - Segment 7,81.14,47.34
+143,Groceries,Groceries - Segment 8,115.24,61.43
+144,Fashion,Fashion - Segment 1,271.88,199.02
+145,Fashion,Fashion - Segment 2,600.42,476.52
+146,Fashion,Fashion - Segment 3,237.6,163.19
+147,Electronics,Electronics - Segment 4,3281.49,1935.14
+148,Automotive,Automotive - Segment 5,39.43,24.36
+149,Electronics,Electronics - Segment 6,1712.55,1234.76
+150,Groceries,Groceries - Segment 7,34.76,26.68
+151,Fashion,Fashion - Segment 8,52.5,36.58
+152,Groceries,Groceries - Segment 1,54.92,41.06
+153,Automotive,Automotive - Segment 2,1463.96,848.06
+154,Home & Kitchen,Home & Kitchen - Segment 3,2025.99,1097.99
+155,Electronics,Electronics - Segment 4,3513.08,2842.14
+156,Fashion,Fashion - Segment 5,278.85,197.83
+157,Fashion,Fashion - Segment 6,322.75,260.03
+158,Electronics,Electronics - Segment 7,1806.03,979.24
+159,Fashion,Fashion - Segment 8,408.54,322.22
+160,Fashion,Fashion - Segment 1,420.09,237.47
+161,Fashion,Fashion - Segment 2,87.09,55.39
+162,Electronics,Electronics - Segment 3,1854.56,1269.95
+163,Groceries,Groceries - Segment 4,221.19,118.81
+164,Sports,Sports - Segment 5,342.39,211.67
+165,Beauty,Beauty - Segment 6,442.74,321.66
+166,Electronics,Electronics - Segment 7,3173.12,1890.1
+167,Groceries,Groceries - Segment 8,79.03,59.52
+168,Sports,Sports - Segment 1,322.91,202.69
+169,Electronics,Electronics - Segment 2,580.14,419.57
+170,Electronics,Electronics - Segment 3,1551.91,1089.51
+171,Fashion,Fashion - Segment 4,399.15,294.45
+172,Electronics,Electronics - Segment 5,1109.76,828.33
+173,Home & Kitchen,Home & Kitchen - Segment 6,1211.73,794.84
+174,Groceries,Groceries - Segment 7,112.73,69.39
+175,Groceries,Groceries - Segment 8,242.31,187.77
+176,Fashion,Fashion - Segment 1,80.53,59.15
+177,Books & Stationery,Books & Stationery - Segment 2,203.32,125.6
+178,Home & Kitchen,Home & Kitchen - Segment 3,337.48,267.09
+179,Groceries,Groceries - Segment 4,8.58,4.97
+180,Fashion,Fashion - Segment 5,452.35,313.89
+181,Sports,Sports - Segment 6,1200.17,896.96
+182,Beauty,Beauty - Segment 7,195.83,109.47
+183,Fashion,Fashion - Segment 8,543.59,393.42
+184,Home & Kitchen,Home & Kitchen - Segment 1,1343.31,819.38
+185,Home & Kitchen,Home & Kitchen - Segment 2,1332.87,803.15
+186,Groceries,Groceries - Segment 3,141.45,74.11
+187,Home & Kitchen,Home & Kitchen - Segment 4,841.75,540.66
+188,Fashion,Fashion - Segment 5,615.71,354.42
+189,Books & Stationery,Books & Stationery - Segment 6,271.86,216.53
+190,Groceries,Groceries - Segment 7,187.5,154.45
+191,Electronics,Electronics - Segment 8,3032.6,1783.08
+192,Groceries,Groceries - Segment 1,29.23,18.08
+193,Electronics,Electronics - Segment 2,3906.65,2175.73
+194,Books & Stationery,Books & Stationery - Segment 3,230.41,123.93
+195,Home & Kitchen,Home & Kitchen - Segment 4,1303.68,914.99
+196,Beauty,Beauty - Segment 5,150.11,114.77
+197,Home & Kitchen,Home & Kitchen - Segment 6,2228.99,1178.19
+198,Home & Kitchen,Home & Kitchen - Segment 7,1661.68,1017.32
+199,Groceries,Groceries - Segment 8,8.28,4.46
+200,Groceries,Groceries - Segment 1,67.5,42.41
